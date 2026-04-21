@@ -2,7 +2,7 @@
 import Image from "next/image";
 import { memo } from "react";
 
-const Banner = (props) => {
+const Banner = (props:any) => {
   const {
     bredcrumbs,
     title,
@@ -34,7 +34,7 @@ const Banner = (props) => {
             {bredcrumbs && (
               <p className="text-xs sm:text-sm mb-2 sm:mb-3">
                 <span className="text-[#7EC74C] font-medium">{bredcrumbs[0]}</span>
-                {bredcrumbs.slice(1).map((crumb, index) => (
+                {bredcrumbs.slice(1).map((crumb:any, index:any) => (
                   <span key={index} className="text-gray-600"> / {crumb}</span>
                 ))}
               </p>
@@ -43,7 +43,7 @@ const Banner = (props) => {
             {/* Title */}
             {title && (
               <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-3 sm:mb-4 leading-tight">
-                {title.split(' ').map((word, index) => (
+                {title.split(' ').map((word:any, index:any) => (
                   <span
                     key={index}
                     className={word.toLowerCase() === 'loans' ? 'text-[#7EC74C]' : 'text-gray-900'}
@@ -70,7 +70,7 @@ const Banner = (props) => {
             {/* Service Items */}
             {serviceItems?.length > 0 && (
               <ul className="mt-4 sm:mt-6 flex flex-wrap gap-3 sm:gap-4">
-                {serviceItems.map((item) => (
+                {serviceItems.map((item:any) => (
                   <li key={item.id} className="flex items-center gap-2 sm:gap-3 bg-white/50 px-3 sm:px-4 py-2 rounded-lg">
                     <span className="shrink-0 w-5 h-5 sm:w-6 sm:h-6">{item.icon}</span>
                     <span className="text-xs sm:text-sm text-gray-800 font-medium">

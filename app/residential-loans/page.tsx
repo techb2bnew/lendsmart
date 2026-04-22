@@ -157,7 +157,7 @@ export default function ResidentialLoansPage() {
           {
             heading: "Fast approval and excellent support",
             description:
-              "We were worried about getting our home loan approved on time, but the team made it happen quicker than expected. They handled everything from lender comparison to documentation with complete professionalism.",
+            "We were worried about getting our home loan approved on time, but the team made it happen quicker than expected. They handled everything from lender comparison to documentation with complete professionalism.",
             name: "Michael Anderson",
             time: "3 Days ago",
             image: "/user.png",

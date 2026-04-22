@@ -186,7 +186,7 @@ export default function CarTruckLoansPage() {
             name: "Michael Anderson",
             time: "3 Days ago",
             image: "/user.png",
-          },
+          }, 
         ]}
       />
     </>

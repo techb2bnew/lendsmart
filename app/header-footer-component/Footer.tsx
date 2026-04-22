@@ -102,7 +102,7 @@ export default function Footer() {
               <div className="relative h-[50px] md:h-[75px] w-[150px] md:w-[250px]">
                 <Link href="/" aria-label="LendSmart Mortgages">
                   <Image
-                    src="/lendSmart-Logo.png"
+                    src="/LendSmart-Logo.png"
                     alt="LendSmart Mortgages logo"
                     fill
                     sizes="(max-width: 768px) 150px, 250px"

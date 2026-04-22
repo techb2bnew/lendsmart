@@ -119,11 +119,27 @@ export default function AboutUsPage() {
       />
       </div>
       <AboutCommitmentSection />
-      <AboutStatsSection />
-      <Testimonials
+      <AboutStatsSection /> 
+       <Testimonials
         title="Testimonials"
         description="Clients trust LendSmart Mortgages for reliable loan guidance and support."
-      /> 
+        reviews={[
+          {
+            heading: "Professional service and trusted guidance",
+            description:"From the very first interaction, the team was professional, responsive, and genuinely helpful. They took the time to understand our needs and provided clear, honest advice throughout the process. It is rare to find such reliable and client-focused service.",
+            name: "Michael Anderson",
+            time: "3 Days ago",
+            image: "/user.png",
+          },
+          {
+            heading: "A team you can rely on",
+            description:"We had a great experience working with them. Their communication was excellent, and they made everything simple to understand. The entire process was smooth, transparent, and well-managed from start to finish.",
+            name: "Michael Anderson",
+            time: "3 Days ago",
+            image: "/user.png",
+          },
+        ]}
+      />
     </>
   );
 }

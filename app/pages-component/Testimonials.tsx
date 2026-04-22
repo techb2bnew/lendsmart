@@ -5,6 +5,13 @@ import Image from "next/image";
 type TestimonialsProps = {
   title?: string;
   description?: string;
+  reviews?: {
+    heading: string;
+    description: string;
+    name: string;
+    time: string;
+    image: string;
+  }[];
 };
 const testimonials = [
   {
@@ -30,7 +37,7 @@ const testimonials = [
   },
 ];
 
-export default function Testimonials({ title, description }: TestimonialsProps) {
+export default function Testimonials({ title, description, reviews }: TestimonialsProps) {
   const [active, setActive] = useState(0);
 
   const visibleTestimonials = useMemo(() => {
@@ -73,7 +80,7 @@ export default function Testimonials({ title, description }: TestimonialsProps) 
 
             {/* Cards overlapped on image */}
             <div className="relative z-40 mt-8 grid grid-cols-1 gap-4 sm:grid-cols-2 lg:mt-10 lg:-mr-12 xl:-mr-[230px]">
-              {visibleTestimonials.map((item, index) => (
+              {reviews?.map((item, index) => (
                 <div
                   key={`${item.name}-${index}-${active}`}
                   className={`group rounded-[14px] border p-6 transition-all duration-300 ${
@@ -86,12 +93,12 @@ export default function Testimonials({ title, description }: TestimonialsProps) 
                     ❝
                   </div>
 
-                  <h3 className="mt-1 text-[20px] font-semibold leading-[1.3] text-white">
-                    {item.title}
+                  <h3 className="mt-1 text-[20px] font-semibold leading-[1.3] text-white text-center">
+                    {item.heading}
                   </h3>
 
                   <div className="mt-4 min-h-[88px] space-y-2 text-center text-[13px] italic leading-5 text-[#ececec]">
-                    {item.text.split("\n").map((line, i) => (
+                    {item.description.split("\n").map((line, i) => (
                       <p key={i}>{line}</p>
                     ))}
                   </div>
@@ -101,8 +108,8 @@ export default function Testimonials({ title, description }: TestimonialsProps) 
                   <div className="mt-5 flex items-center gap-3">
                     <div className="h-11 w-11 overflow-hidden rounded-full">
                       <Image
-                        src={item.avatar}
-                        alt={item.name}
+                        src={item.image}
+                        alt={item.heading}
                         width={44}
                         height={44}
                         className="h-full w-full object-cover"

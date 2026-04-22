@@ -21,6 +21,7 @@ type LendingSolutionsProps = {
   bottomLeftImage?: string;
   bottomRightImage?: string;
   rightImage?: string;
+  rightImageClassName?: string;
 };
 
 const defaultSolutions = [
@@ -68,6 +69,7 @@ export default function LendingSolutions({
   bottomLeftImage = "/about/main.png",
   bottomRightImage = "/about/main.png",
   rightImage,
+  rightImageClassName = "object-cover",
 }: LendingSolutionsProps) {
   const [activeId, setActiveId] = useState(solutions[0]?.id ?? "");
 
@@ -144,7 +146,7 @@ export default function LendingSolutions({
 
             {rightImage ? (
               <div className="relative h-[300px] overflow-hidden rounded-[10px] sm:h-[360px] lg:h-full lg:min-h-[360px]">
-                <Image src={rightImage} alt="Lending solutions" fill className="object-cover" />
+                <Image src={rightImage} alt="Lending solutions" fill className={rightImageClassName} />
               </div>
             ) : (
               <div className="grid grid-cols-2 gap-3 sm:gap-4">

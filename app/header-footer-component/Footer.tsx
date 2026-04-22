@@ -6,20 +6,25 @@ import { useState, type ReactNode } from "react";
 import Newsletter from "../pages-component/form-Component/Newsletter";
 
 
-const quickLinks = ["Home", "Services", "About Us", "Contact Us"];
+const quickLinks = [
+  { label: "Home", href: "/" },
+  { label: "Services", href: "/residential-loans" },
+  { label: "About Us", href: "/about-us" },
+  { label: "Contact Us", href: "/contact" },
+];
 const services = [
-  "Residential Home Loans",
-  "Commercial Loans",
-  "Personal Loans",
-  "Car & Truck Loans",
-  "Asset Finance",
-  "Construction Loans",
+  { label: "Residential Home Loans", href: "/residential-loans" },
+  { label: "Commercial Loans", href: "/commercial-loans" },
+  { label: "Personal Loans", href: "/personal-loans" },
+  { label: "Car & Truck Loans", href: "/car-truck-loans" }, 
+  { label: "Asset Finance", href: "/asset-finance" },
+  { label: "Construction Loans", href: "/construction-loans" },
 ];
 const company = [
-  "Terms & Condition",
-  "Privacy Policy",
-  "Calculate Mortgage",
-  "History & Fidelity",
+  { label: "Terms & Condition", href: "#" },
+  { label: "Privacy Policy", href: "#" },
+  { label: "Calculate Mortgage", href: "#" },
+  { label: "History & Fidelity", href: "#" },
 ];
 
 const accordionIds = {
@@ -145,9 +150,9 @@ export default function Footer() {
             >
               <ul className="space-y-3 pb-4 lg:mt-5 lg:pb-0">
                 {quickLinks.map((link) => (
-                  <li key={link}>
-                    <Link href="#" className="text-[14px] text-[#333] transition hover:text-[#1380d4]">
-                      {link}
+                  <li key={link.label}>
+                    <Link href={link.href} className="text-[14px] text-[#333] transition hover:text-[#1380d4]">
+                      {link.label}
                     </Link>
                   </li>
                 ))}
@@ -163,9 +168,9 @@ export default function Footer() {
             >
               <ul className="space-y-3 pb-4 lg:mt-5 lg:pb-0">
                 {services.map((item) => (
-                  <li key={item}>
-                    <Link href="#" className="text-[14px] text-[#333] transition hover:text-[#1380d4]">
-                      {item}
+                  <li key={item.label}>
+                    <Link href={item.href} className="text-[14px] text-[#333] transition hover:text-[#1380d4]">
+                      {item.label}
                     </Link>
                   </li>
                 ))}
@@ -181,9 +186,9 @@ export default function Footer() {
             >
               <ul className="space-y-3 pb-4 lg:mt-5 lg:pb-0">
                 {company.map((item) => (
-                  <li key={item}>
-                    <Link href="#" className="text-[14px] text-[#333] transition hover:text-[#1380d4]">
-                      {item}
+                  <li key={item.label}>
+                    <Link href={item.href} className="text-[14px] text-[#333] transition hover:text-[#1380d4]">
+                      {item.label}
                     </Link>
                   </li>
                 ))}
@@ -227,7 +232,7 @@ export default function Footer() {
                 height={400}
                 priority
                 quality={75}
-                className="object-contain object-right-bottom"
+                className="object-contain object-bottom-right"
               />
             </div>
           </div>

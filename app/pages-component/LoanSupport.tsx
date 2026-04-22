@@ -18,6 +18,7 @@ type LoanSupportProps = {
   ctaButtonLink?: string;
   imageSrc?: string;
   imageAlt?: string;
+  supportCardBgClassName?: string;
 };
 const defaultSupportItems = [
   {
@@ -56,7 +57,16 @@ export default function LoanSupport({
   ctaButtonLink = "tel:0413208624",
   imageSrc = "/loan-supported.png",
   imageAlt = "Loan support",
+  supportCardBgClassName = "bg-[#F4FBE9]",
 }: LoanSupportProps) {
+  const descriptionLines = description
+    .split("\n")
+    .map((line) => line.trim())
+    .filter(Boolean)
+    .map((line) => line.replace(/^[•*-]\s*/, ""));
+
+  const hasDescriptionList = descriptionLines.length > 1;
+
   return (
     <section className="overflow-hidden px-4 py-8 sm:py-10 lg:px-10 lg:py-14">
       <div className="max-w-[1440px] mx-auto">
@@ -77,7 +87,7 @@ export default function LoanSupport({
           </div>
 
           {/* Right content */}
-          <div className="relative mt-4">
+          <div className="relative mt-7 lg:mt-4">
             <div className="relative z-20 lg:pl-2">
               <h2 className="text-[28px] font-extrabold lg:leading-[55px] tracking-[-0.02em] text-black sm:text-[36px] lg:text-[40px]">
                 {highlightText && (
@@ -98,9 +108,24 @@ export default function LoanSupport({
                 </h2>
 
               <div className="mt-5 max-w-full border-l-[5px] border-[#79c44a] pl-4 sm:max-w-[82%]">
-                <p className="text-[15px] leading-7 text-[#222]">
-                  {description}
-                </p>
+                {hasDescriptionList ? (
+                  <ul className="space-y-1.5">
+                    {descriptionLines.map((line) => (
+                      <li key={line} className="flex items-start gap-2 text-[15px] leading-7 text-[#222]">
+                        <Image
+                          src="/service/star.png"
+                          alt=""
+                          width={12}
+                          height={12}
+                          className="mt-2 shrink-0 object-contain"
+                        />
+                        <span>{line}</span>
+                      </li>
+                    ))}
+                  </ul>
+                ) : (
+                  <p className="text-[15px] leading-7 text-[#222]">{description}</p>
+                )}
               </div>
             </div>
 
@@ -110,7 +135,7 @@ export default function LoanSupport({
                 {supportItems.map((item) => (
                   <div
                     key={item.label}
-                    className="flex min-h-[82px] w-full flex-row items-center gap-3 rounded-[12px] border border-[#9bd05c] bg-[#F4FBE9] px-4 py-4 shadow-[0_2px_0_rgba(0,0,0,0.02)] sm:px-5 lg:w-full"
+                    className={`flex min-h-[82px] w-full flex-row items-center gap-3 rounded-[12px] border border-[#9bd05c] ${supportCardBgClassName} px-4 py-4 shadow-[0_2px_0_rgba(0,0,0,0.02)] sm:px-5 lg:w-full`}
                   >
                     <div className="relative h-[34px] w-[34px] shrink-0">
                       <Image

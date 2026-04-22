@@ -1,13 +1,22 @@
 import Image from "next/image";
+export type LoanProcessStep = {
+  num: number;
+  title: string;
+  desc: string;
+  icon: string;
+  active?: boolean;
+};
+
 type LoanProcessProps = {
     highlightText?: string;
     normalText?: string;  
     breakText?: string;
-    description: string;
+    description?: string;
     buttonText?: string;
     buttonLink?: string;
+    steps?: LoanProcessStep[];
 };
-const steps = [
+const defaultSteps: LoanProcessStep[] = [
   {
     num: 1,
     title: "Contact Us",
@@ -48,6 +57,7 @@ export default function LoanProcess({
   description,
   buttonText,
   buttonLink = "https://wa.me/61413208624",
+  steps = defaultSteps,
 }: LoanProcessProps) {
   return (
     <section className="overflow-hidden px-4 py-8 sm:py-10 lg:px-8 lg:py-12">
@@ -55,12 +65,15 @@ export default function LoanProcess({
         {/* heading */}
         <div className="mx-auto max-w-full text-center">
           <h2 className="text-[28px] sm:text-[34px] lg:text-[44px] xl:text-[50px] font-extrabold leading-[1.08] tracking-[-0.02em] text-black">
-            How Our <span className="text-[#7cc242]">Loan Process</span> Works
+            {normalText || "How Our"}{" "}
+            <span className="text-[#7cc242]">{highlightText || "Loan Process"}</span>{" "}
+            {breakText || "Works"}
           </h2>
 
           <p className="mx-auto mt-3 max-w-[620px] text-[15px] leading-7 text-[#333]">
-            Choosing the right loan can be complicated. At LendSmart Mortgages,
-            we simplify the process and help you make informed decisions.
+            {description?.trim()
+              ? description
+              : "Choosing the right loan can be complicated. At LendSmart Mortgages, we simplify the process and help you make informed decisions."}
           </p>
         </div>
 

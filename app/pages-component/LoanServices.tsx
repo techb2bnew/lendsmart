@@ -69,7 +69,7 @@ export default function LoanServices({ title, description }: LoanServicesProps) 
     </svg>
   );
   return (
-    <section id="services" className="relative z-10 -mt-10 sm:-mt-12 lg:-mt-14 sm:px-6 lg:px-8">
+    <section id="services" className="relative z-10 mt-0 sm:-mt-12 lg:-mt-14 sm:px-6 lg:px-8">
       <div className="max-w-[1440px] mx-auto rounded-[12px] bg-[#171717] py-7 shadow-[0_18px_40px_rgba(0,0,0,0.18)] px-4 sm:py-8 lg:px-10 lg:py-10 ">
         <div className="grid grid-cols-1 items-start gap-8 lg:grid-cols-[minmax(0,300px)_minmax(0,1fr)] lg:gap-10 xl:grid-cols-[minmax(0,320px)_minmax(0,1fr)]">
           {/* Left image */}

@@ -1,8 +1,13 @@
 import Image from "next/image";
+import type { ReactNode } from "react";
 
 type MainSectionProps = {
   title: string;
+  titleContent?: ReactNode;
   heading: string;
+  /** If set and found inside `heading`, that substring is shown in brand green */
+  headingHighlight?: string;
+  titleClassName?: string;
   description: string;
   image: string;
   extraDescription?: string;
@@ -17,7 +22,10 @@ type MainSectionProps = {
 
 export default function MainSection({
   title,
+  titleContent,
   heading,
+  headingHighlight,
+  titleClassName,
   description,
   image,
   extraDescription,
@@ -42,12 +50,25 @@ export default function MainSection({
       <div className="max-w-[1440px] mx-auto pt-5 sm:pt-14 lg:pt-16 relative z-20 mb-8">
         <div className="grid grid-cols-1 lg:grid-cols-[1.05fr_0.95fr] items-start gap-10 lg:gap-6">
           <div className="pt-6 lg:pt-10">
-            <p className="mb-3 text-[13px] font-semibold uppercase tracking-wide text-[#79c44a]">
-              {title}
+            <p
+              className={
+                titleClassName ??
+                "mb-3 text-[13px] font-semibold uppercase tracking-wide text-[#79c44a]"
+              }
+            >
+              {titleContent ?? title}
             </p>
 
             <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-4xl xl:text-5xl font-extrabold leading-normal md:leading-[1.08] tracking-[-0.02em] text-[#222222]">
-              {heading}
+              {headingHighlight && heading.includes(headingHighlight) ? (
+                <>
+                  {heading.slice(0, heading.indexOf(headingHighlight))}
+                  <span className="text-[#7cc242]">{headingHighlight}</span>
+                  {heading.slice(heading.indexOf(headingHighlight) + headingHighlight.length)}
+                </>
+              ) : (
+                heading
+              )}
             </h1>
 
             <p className="mt-4 text-[14px] leading-6 text-[#333333]">{description}</p>
@@ -62,7 +83,7 @@ export default function MainSection({
                     {featurePointIcon ? (
                       <Image src={featurePointIcon} alt="" width={14} height={14} className="mr-1 object-contain" />
                     ) : (
-                      <span className="mr-1 text-[#7cc242]">●</span>
+                      <Image src="/service/star.png" alt="" width={14} height={14} className="mr-1 object-contain" />
                     )}
                     {point}
                   </p>

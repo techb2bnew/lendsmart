@@ -30,6 +30,24 @@ export default function ContactPage() {
       <Testimonials
         title="Testimonials"
         description="Clients trust LendSmart Mortgages for reliable loan guidance and support."
+        reviews={[
+          {
+            heading: "Professional service and fast communication",
+            description:
+              "Great advice and support throughout the loan application process. The team helped us understand our loan options clearly and made everything easier.",
+            name: "Michael Anderson",
+            time: "3 Days ago",
+            image: "/user.png",
+          },
+          {
+            heading: "Professional service and fast communication",
+            description:
+              "Great advice and support throughout the loan application process. The team helped us understand our loan options clearly and made everything easier.",
+            name: "Michael Anderson",
+            time: "3 Days ago",
+            image: "/user.png",
+          },
+        ]}
       />
     </>
   );

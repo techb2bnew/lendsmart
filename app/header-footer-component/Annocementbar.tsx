@@ -63,7 +63,7 @@ const Annocementbar = () => {
     <div>
        <div className="h-1 w-full bg-[#6db33f] sm:h-[4px]" />
        
-      <div className="w-full bg-white text-[11px] text-[#3e3e3e] sm:text-[12px] px-4 lg:px-0">
+      <div className="w-full bg-white text-[11px] text-[#3e3e3e] sm:text-[12px] px-4 lg:px-4">
         <div className="max-w-[1440px] mx-auto flex h-11 items-center justify-between sm:h-[46px]">
           <div className="hidden items-center divide-x divide-gray-300 md:flex">
             <div className="flex items-center gap-2 pr-4 lg:pr-5">

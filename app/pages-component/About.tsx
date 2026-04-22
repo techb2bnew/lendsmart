@@ -61,7 +61,7 @@ export default function About({description1, description2, gaolHeading, gaolDesc
       <div className="max-w-[1440px] mx-auto">
         <div className="grid grid-cols-1 items-end">
           {/* left */}
-          <div className="lg:pt-2">
+          <div className="pt-5 lg:pt-2">
             <h2 className="text-[28px] sm:text-[34px] lg:text-[40px] font-extrabold leading-normal md:leading-[1.05] tracking-[-0.02em] text-black">
               About <span className="text-[#1380d4]">Lend</span>
               <span className="text-[#7cc242]">Smart</span> Mortgages
@@ -159,7 +159,7 @@ export default function About({description1, description2, gaolHeading, gaolDesc
               </Link>
             </div>
             </div>
-            <div className="relative mx-auto w-full max-w-[360px] lg:max-w-[400px] h-[300px] sm:h-[380px] lg:h-[400px]">
+            <div className="relative mx-auto w-full max-w-[360px] lg:max-w-[400px] h-[300px] sm:h-[380px] lg:h-[400px] sm:max-h-none hidden sm:block">
 
               {/* person image */}
               <div className="absolute bottom-0 left-1/2 z-10 h-full w-full max-h-[280px] -translate-x-1/2 sm:max-h-none">

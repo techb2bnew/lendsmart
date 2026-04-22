@@ -133,7 +133,7 @@ export default function WhyChoose({
         </div>
       </div>
       {!hideHandImage && (
-        <div className="pointer-events-none mt-8 w-[100px] sm:w-[170px] bottom-0 absolute lg:-bottom-2 lg:left-0 lg:mt-0 lg:w-[190px]">
+        <div className="pointer-events-none mt-8 w-[100px] sm:w-[170px] bottom-0 absolute lg:-bottom-2 lg:left-0 lg:mt-0 lg:w-[120px]">
           <Image
             src={handImage}
             alt="Hand holding house"

@@ -6,7 +6,7 @@ import Image from "next/image";
 
 const navLinks = [
   { label: "Home", href: "/" },
-  { label: "Services", href: "/services" },
+  { label: "Services", href: "/residential-loans" },
   { label: "About Us", href: "/about-us" },
   { label: "Contact Us", href: "/contact" },
 ];
@@ -48,7 +48,7 @@ export default function LendSmartHeader() {
   return (
     <header className="w-full overflow-visible">
       <div className={`bg-white transition-all duration-300 ${isSticky ? "fixed top-0 left-0 w-full z-50 shadow-lg" : "relative"}`}>
-        <div className="bg-[#F4F4F4] border-y border-gray-300 px-4 lg:px-0">
+        <div className="bg-[#F4F4F4] border-y border-gray-300 px-4 lg:px-5">
           <div className="max-w-[1440px] mx-auto relative flex min-h-[70px] items-center justify-between py-2">
             {/* Logo */}
           

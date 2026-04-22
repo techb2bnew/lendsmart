@@ -22,9 +22,7 @@ const services = [
 ];
 const company = [
   { label: "Terms & Condition", href: "#" },
-  { label: "Privacy Policy", href: "#" },
-  { label: "Calculate Mortgage", href: "#" },
-  { label: "History & Fidelity", href: "#" },
+  { label: "Privacy Policy", href: "#" }, 
 ];
 
 const accordionIds = {

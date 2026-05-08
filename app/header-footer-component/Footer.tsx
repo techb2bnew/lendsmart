@@ -21,7 +21,7 @@ const services = [
   { label: "Construction Loans", href: "/construction-loans" },
 ];
 const company = [
-  { label: "Terms & Condition", href: "/terms-conditions" },
+  { label: "Terms & Conditions", href: "/terms-conditions" },
   { label: "Privacy Policy", href: "/privacy-policy" }, 
 ];
 

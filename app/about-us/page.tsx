@@ -120,7 +120,7 @@ export default function AboutUsPage() {
         breakText="Works"
         description="Choosing the right loan can be complicated. At LendSmart Mortgages, we simplify the process and help you make informed decisions."
         buttonText="Chat With Us"
-        buttonLink="https://wa.me/61413208624"
+        buttonLink="https://wa.me/0413206624"
       />
       </div>
       <AboutCommitmentSection />

@@ -56,7 +56,7 @@ export default function LoanProcess({
   breakText,
   description,
   buttonText,
-  buttonLink = "https://wa.me/61413208624",
+  buttonLink = "https://wa.me/0413206624",
   steps = defaultSteps,
 }: LoanProcessProps) {
   return (

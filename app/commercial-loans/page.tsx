@@ -122,7 +122,7 @@ export default function CommercialLoansPage() {
         callText="Call Now"
         callLink="tel:0413208624"
         chatText="Chat With Us"
-        chatLink="https://wa.me/61413208624"
+        chatLink="https://wa.me/0413206624"
       />
 
       <HowWeCanHelpYou imageSrc="/service/commercial-help.png" items={helpItems} />
@@ -155,7 +155,7 @@ export default function CommercialLoansPage() {
           subtitle="There are so many Loan & financing options"
           solutions={financeSolutions}
           chatButtonText="Click here to chat"
-          chatButtonLink="https://wa.me/61413208624"
+          chatButtonLink="https://wa.me/0413206624"
           ctaButtonText="Get Loan Options"
           ctaButtonLink="tel:0413208624"
           topImage="/service/help5.png"
@@ -195,7 +195,7 @@ export default function CommercialLoansPage() {
         description="Choosing the right loan can be complicated. At LendSmart Mortgages, we simplify the process and help you make informed decisions."
         steps={commercialLoanProcessSteps}
         buttonText="Chat With Us"
-        buttonLink="https://wa.me/61413208624"
+        buttonLink="https://wa.me/0413206624"
       />
 
       <ServiceStatsBar

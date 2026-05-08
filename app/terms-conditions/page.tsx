@@ -29,7 +29,7 @@ export default function TermsConditions() {
 
         <div className="mb-8">
           <h2 className="text-xl font-semibold mb-2">9. Contact</h2>
-          <p className="text-gray-600">LendSmart Mortgages Pty Ltd</p>
+          <p className="text-gray-600">LendSmart Mortgages </p>
           
           <p className="text-gray-600">
             Phone:{" "}
@@ -76,12 +76,12 @@ const terms = [
   {
     title: "3. Third-Party Services",
     content:
-      "LendSmart Mortgages Pty Ltd may work with lenders, aggregators, insurers, and referral partners. We may receive commissions or referral fees in connection with finance arrangements. ",
+      "LendSmart Mortgages  may work with lenders, aggregators, insurers, and referral partners. We may receive commissions or referral fees in connection with finance arrangements. ",
   },
   {
     title: "4. Accuracy of Information",
     content:
-      "While reasonable care is taken to ensure website information is accurate and current, LendSmart Mortgages Pty Ltd does not guarantee completeness, reliability, or accuracy of website content, rates, or product information. ",
+      "While reasonable care is taken to ensure website information is accurate and current, LendSmart Mortgages  does not guarantee completeness, reliability, or accuracy of website content, rates, or product information. ",
   },
   {
     title: "5. Privacy",
@@ -91,12 +91,12 @@ const terms = [
   {
     title: "6. Intellectual Property",
     content:
-      "All website content, branding, graphics, and materials remain the intellectual property of LendSmart Mortgages Pty Ltd unless otherwise stated. ",
+      "All website content, branding, graphics, and materials remain the intellectual property of LendSmart Mortgages  unless otherwise stated. ",
   },
    {
     title: "7. Limitation of Liability",
     content:
-      "To the maximum extent permitted by law, LendSmart Mortgages Pty Ltd is not liable for any direct or indirect loss arising from use of this website or reliance on website information.  ",
+      "To the maximum extent permitted by law, LendSmart Mortgages  is not liable for any direct or indirect loss arising from use of this website or reliance on website information.  ",
   },
    {
     title: "7. Governing Law",

@@ -44,7 +44,7 @@ export default function PrivacyPolicy() {
               Providing Your Personal Information to Other Organisations
             </h2>
             <p>
-              In providing products and services to you it may be necessary for us to provide your personal information to other organisations with which we conduct business. This includes outsource financial pty ltd (ACN 131 090 705) which is our mortgage aggregator.
+              In providing products and services to you it may be necessary for us to provide your personal information to other organisations with which we conduct business. This includes outsource financial  (ACN 131 090 705) which is our mortgage aggregator.
 
               Other such organisations include related entities, mortgage managers, lenders, solicitors and legal advisers, accountants and auditors, printers and mailing services, insurers, collection agents, conveyancers and government agencies which regulate our products and services.
 
@@ -68,7 +68,7 @@ export default function PrivacyPolicy() {
             <p>
               The Privacy Act gives you rights to access the personal information we hold about you, and you can ask us to correct the information if it is inaccurate.
 
-              You can gain access to the information we hold about you by contacting us at 0413206624 or outsource financial Pty Ltd on 1300 781 481.
+              You can gain access to the information we hold about you by contacting us at 0413206624 or outsource financial  on 1300 781 481.
             </p>
           </div>
 

@@ -48,7 +48,7 @@ export default function Hero() {
               </a>
  
               <a
-                href="https://wa.me/61413208624"
+                href="https://wa.me/0413206624"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 border-b md:border-[#cfcfcf] border-white/50 pb-1 text-[14px] font-semibold md:text-black text-white hover:text-[#0479c3] transition">

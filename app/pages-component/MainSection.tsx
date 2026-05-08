@@ -35,7 +35,7 @@ export default function MainSection({
   callText = "Call Now",
   callLink = "tel:0413208624",
   chatText = "Chat With Us",
-  chatLink = "https://wa.me/61413208624",
+  chatLink = "https://wa.me/0413206624",
 }: MainSectionProps) {
   const callIcon = (
     <svg width={21} height={21} viewBox="0 0 31 31" fill="none" xmlns="http://www.w3.org/2000/svg">

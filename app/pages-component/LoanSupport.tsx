@@ -52,7 +52,7 @@ export default function LoanSupport({
     description: "Mortgages can help guide you through the financing process.",
   },
   chatButtonText = "Chat With Us",
-  chatButtonLink = "https://wa.me/61413208624",
+  chatButtonLink = "https://wa.me/0413206624",
   ctaButtonText = "Get Loan Options",
   ctaButtonLink = "tel:0413208624",
   imageSrc = "/loan-supported.png",

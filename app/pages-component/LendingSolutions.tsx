@@ -62,7 +62,7 @@ export default function LendingSolutions({
   subtitle = "We assist individuals and businesses with tailored loan options.",
   solutions = defaultSolutions,
   chatButtonText = "Chat With Us",
-  chatButtonLink = "https://wa.me/61413208624",
+  chatButtonLink = "https://wa.me/0413206624",
   ctaButtonText = "Get Loan Options",
   ctaButtonLink = "tel:0413208624",
   topImage = "/about/main.png",

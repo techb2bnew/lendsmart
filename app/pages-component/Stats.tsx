@@ -3,10 +3,10 @@
 import { useEffect, useRef, useState } from "react";
 
 const stats = [
-  { value: 1, suffix: "k+", label: "Volunteers Participated" },
-  { value: 80, suffix: "k+", label: "Veteran Home Completed" },
-  { value: 20, suffix: "+", label: "Years in Business" },
-  { value: 10, suffix: "M+", label: "Customer Worldwide" },
+  { value: 250, suffix: "M+", label: "In Loans Settled" },
+  { value: 45, suffix: "+", label: "Lenders on Panel" },
+  { value: 12, suffix: "+", label: "Years Combined Experience" },
+  // { value: '', suffix: "", label: "Serving Clients Across Austrailia" },
 ];
 
 function CountUp({
@@ -90,7 +90,7 @@ export default function Stats() {
             <div key={i} className="text-center">
               <div className="text-[22px] font-semibold leading-none text-black lg:text-[40px]">
                 <CountUp
-                  end={stat.value}
+                  end={Number(stat.value)}
                   suffix={stat.suffix}
                   start={startCount}
                 />
@@ -101,6 +101,12 @@ export default function Stats() {
               </div>
             </div>
           ))}
+
+           <div className="text-center"> 
+              <div className="mt-3 text-[13px] font-medium leading-5 text-black sm:text-[14px]">
+                Serving Clients Across Austrailia
+              </div>
+            </div>
         </div>
       </div>
     </section>

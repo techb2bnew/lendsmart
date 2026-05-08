@@ -68,15 +68,15 @@ const Annocementbar = () => {
           <div className="hidden items-center divide-x divide-gray-300 md:flex">
             <div className="flex items-center gap-2 pr-4 lg:pr-5">
               {EmailIcon}
-              <a href="mailto:bharat@lendsmart.com.au" className="truncate hover:underline hover:text-[#3f7416]">bharat@lendsmart.com.au</a>
+              <a href="mailto:bharat@lendsmartmortgages.com.au" className="truncate hover:underline hover:text-[#3f7416]">bharat@lendsmartmortgages.com.au</a>
             </div>
             <div className="flex items-center gap-2 px-4 lg:px-5">
               {EmailIcon}
-              <a href="mailto:v.admin@lendsmart.com.au" className="truncate hover:underline hover:text-[#3f7416]">admin@lendsmart.com.au</a>
+              <a href="mailto:v.admin@lendsmartmortgages.com.au" className="truncate hover:underline hover:text-[#3f7416]">admin@lendsmartmortgages.com.au</a>
             </div>
             <div className="hidden items-center gap-2 px-4 lg:flex lg:px-5">
               {ClockIcon}
-              <span>Mon - Sun : 9:30am to 4:30pm</span>
+              <span>Mon - Fri : 9:30am to 4:30pm</span>
             </div>
             <div className="hidden items-center gap-2 pl-4 lg:flex lg:pl-5">
               {CallIcon}

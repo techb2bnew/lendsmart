@@ -39,7 +39,7 @@ export default function WhyChoose({
   benefitsHeading = "With LendSmart you receive:",
   benefits = defaultBenefits,
   chatButtonText = "Chat With Us",
-  chatButtonLink = "https://wa.me/61413208624",
+  chatButtonLink = "https://wa.me/0413206624",
   ctaButtonText = "Get Loan Options",
   ctaButtonLink = "tel:0413208624",
   personImage = "/about.png",

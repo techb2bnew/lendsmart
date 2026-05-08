@@ -93,7 +93,7 @@ export default function AssetFinancePage() {
         callText="Call Now"
         callLink="tel:0413208624"
         chatText="Chat With Us"
-        chatLink="https://wa.me/61413208624"
+        chatLink="https://wa.me/0413206624"
       />
 
       <div className="py-6 sm:py-8 lg:py-10">
@@ -124,7 +124,7 @@ export default function AssetFinancePage() {
         subtitle="There are so many Loan & financing options"
         solutions={assetFinanceOptions}
         chatButtonText="Click here to chat"
-        chatButtonLink="https://wa.me/61413208624"
+        chatButtonLink="https://wa.me/0413206624"
         ctaButtonText="Get Loan Options"
         ctaButtonLink="tel:0413208624"
         rightImage="/service/financed-assest.png"
@@ -161,7 +161,7 @@ export default function AssetFinancePage() {
         description="Choosing the right loan can be complicated. At LendSmart Mortgages, we simplify the process and help you make informed decisions."
         steps={assetLoanProcessSteps}
         buttonText="Chat With Us"
-        buttonLink="https://wa.me/61413208624"
+        buttonLink="https://wa.me/0413206624"
       />
 
       <ServiceStatsBar

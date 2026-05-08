@@ -110,9 +110,7 @@ export default function Footer() {
               </div>
 
               <p className="mt-4 text-[15px] leading-7 text-[#444]">
-                With a rich history spanning decades, our club has become a
-                symbol of excellence in the golfing community, offers a
-                challenging yet rewarding game play.
+               At LendSmart Mortgages, we believe securing finance should be clear, strategic, and stress-free. Whether you are purchasing your first home, refinancing, investing, or growing your business, we help you make informed financial decisions with confidence.
               </p>
 
               <div className="mt-6 flex items-center gap-5 text-black">
@@ -202,13 +200,13 @@ export default function Footer() {
             >
               <ul className="space-y-3 pb-4 text-[14px] text-[#333] lg:mt-5 lg:pb-0">
                 <li>
-                  <a href="mailto:bharat@lendsmart.com.au" className="transition hover:text-[#1380d4]">
-                    bharat@lendsmart.com.au
+                  <a href="mailto:bharat@lendsmartmortgages.com.au" className="transition hover:text-[#1380d4]">
+                    bharat@lendsmartmortgages.com.au
                   </a>
                 </li>
                 <li>
-                  <a href="mailto:admin@lendsmart.com.au" className="transition hover:text-[#1380d4]">
-                    admin@lendsmart.com.au
+                  <a href="mailto:admin@lendsmartmortgages.com.au" className="transition hover:text-[#1380d4]">
+                    admin@lendsmartmortgages.com.au
                   </a>
                 </li>
                 <li className="pt-2">

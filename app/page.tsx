@@ -18,7 +18,7 @@ export default function Home() {
     <>
       <Hero />
       <About
-        description1="LendSmart Mortgages helps individuals, families, and businessesaccess the right loan solutions with confidence."
+        description1="LendSmart Mortgages helps individuals, families, and businesses access the right loan solutions with confidence."
         description2="We work with a wide network of lenders to help you find loan options that suit your financial goals. Whether you arepurchasing a home, financing a vehicle, or expanding yourbusiness, we guide you through the entire loan process."
         gaolHeading="Our goal is to make borrowing"
         gaolDescription=" simple, transparent, and stress-free."

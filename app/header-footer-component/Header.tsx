@@ -107,7 +107,7 @@ export default function LendSmartHeader() {
               </div>
 
               <Link href="/about-us" className="text-[#333] hover:text-[#1380d4]">About Us</Link>
-              <Link href="/contact" className="text-[#333]hover:text-[#1380d4]">Contact Us</Link>
+              <Link href="/contact" className="text-[#333] hover:text-[#1380d4]">Contact Us</Link>
 
             </nav>
 

@@ -47,7 +47,7 @@ export default function ContactPage() {
           {
             heading: "",
             description:
-              "Great advice and support throughout the loan application process. The team helped us understand our loan options clearly and made everything easier.",
+              "Professional, responsive, and genuinely helpful. We felt supported from application to settlement.",
             name: "Jason K.",
             time: "3 Days ago",
             image: "/user-t.jpg",

@@ -17,7 +17,7 @@ export default function SpeakWithExpertSection() {
           </div>
           <div className="pt-4 text-[15px] leading-7 text-[#1f1f1f]">
             <p><span className="font-semibold">Phone:</span> 0413 206 624</p>
-            <p><span className="font-semibold">Email:</span> info@lendsmartmortgages.com.au</p>
+            <p><span className="font-semibold">Email:</span> admin@lendsmartmortgages.com.au</p>
             <p><span className="font-semibold">Location:</span> Australia</p>
           </div>
         </div>

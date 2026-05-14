@@ -8,7 +8,7 @@ export default function ContactFormMapSection() {
           <div className="relative mx-auto h-[420px] w-full max-w-[430px] sm:h-[480px] lg:h-[520px] lg:max-w-[520px] lg:left-[110px] z-10">
             <Image src="/contact/businesswoman.png" alt="Business advisor" fill className="object-contain object-bottom" />
             <div className="absolute left-[-10px] top-[0%] lg:top-[30%] w-[130px] rounded-[14px] bg-[#4c8f1f] p-4 text-center text-white sm:w-[150px]">
-              <p className="text-sm font-bold">Chat With UsLive!</p>
+              <p className="text-sm font-bold">Chat With Us Live!</p>
               <p className="mt-2 text-[11px] leading-4">Need help now? Chat with a loan expert instantly on WhatsApp</p>
               <a
                 href="https://wa.me/0413 206 624"

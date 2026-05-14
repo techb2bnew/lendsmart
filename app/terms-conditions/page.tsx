@@ -18,7 +18,7 @@ export default function TermsConditions() {
 
         {terms.map((section, i) => (
           <div key={i} className="mb-8">
-            <h2 className="text-xl font-semibold mb-2">
+            <h2 className="text-xl font-semibold mb-2 text-[#000000]">
               {section.title}
             </h2>
             <p className="text-gray-600 whitespace-pre-line">

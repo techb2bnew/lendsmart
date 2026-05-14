@@ -19,7 +19,7 @@ export default function PrivacyPolicy() {
         <div className="space-y-8 text-gray-600 whitespace-pre-line">
 
           <p>
-            In handling your personal information, Thrifty Home Loans is committed to complying with the Privacy Act 1988 and the Australian Privacy Principles.
+            In handling your personal information, LendSmart Mortgages is committed to complying with the Privacy Act 1988 and the Australian Privacy Principles.
           </p>
 
           <div>
@@ -34,7 +34,7 @@ export default function PrivacyPolicy() {
                 provide you with the products and services you require, which may include financial and insurance products and services; and
               </li>
               <li>
-                provide you with information about products and services available to you from Thrifty Home Loans and associated businesses.
+                provide you with information about products and services available to you from LendSmart Mortgages and associated businesses.
               </li>
             </ul>
           </div>
@@ -79,7 +79,7 @@ export default function PrivacyPolicy() {
             <p>
               If you consent to us doing so, we may obtain a report or information about your consumer or commercial credit worthiness from a CRB. We may disclose personal information such as your name, date of birth, drivers licence and address to the CRB to obtain an assessment of whether that personal information matches the information held by it.
 
-              By signing this document below, I/we appoint Thrifty Home Loans as our agent to obtain a credit report on my/our behalf.
+              By signing this document below, I/we appoint LendSmart Mortgages as our agent to obtain a credit report on my/our behalf.
             </p>
           </div>
 

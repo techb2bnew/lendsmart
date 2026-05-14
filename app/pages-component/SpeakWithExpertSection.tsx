@@ -49,7 +49,7 @@ export default function SpeakWithExpertSection() {
             {items.map((item) => (
               <div key={item} className="flex items-center justify-between rounded-[10px] bg-[#1c1c1c] px-5 py-3 text-white">
                 <span className="text-[17px] font-semibold">{item}</span>
-                <span>→</span>
+                {/* <span>→</span> */}
               </div>
             ))}
           </div>

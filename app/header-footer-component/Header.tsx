@@ -1,14 +1,10 @@
 "use client";
 
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 import Image from "next/image";
-
-const navLinks = [
-  { label: "Home", href: "/" },
-  { label: "About Us", href: "/about-us" },
-  { label: "Contact Us", href: "/contact" },
-];
+import SocialLinks from "./SocialLinks";
 
 const services = [
   { label: "Residential Home Loans", href: "/residential-loans" },
@@ -19,7 +15,17 @@ const services = [
   { label: "Construction Loans", href: "/construction-loans" },
 ];
 
+function isPathActive(pathname: string, href: string) {
+  if (href === "/") return pathname === "/";
+  return pathname === href || pathname.startsWith(`${href}/`);
+}
+
+function isAnyServiceActive(pathname: string) {
+  return services.some((s) => isPathActive(pathname, s.href));
+}
+
 export default function LendSmartHeader() {
+  const pathname = usePathname() ?? "";
   const [mobileOpen, setMobileOpen] = useState(false);
   const [isSticky, setIsSticky] = useState(false);
   const [serviceOpen, setServiceOpen] = useState(false);
@@ -62,11 +68,29 @@ export default function LendSmartHeader() {
   }, []);
 
   useEffect(() => {
+    setMobileOpen(false);
+    setServiceOpen(false);
+  }, [pathname]);
+
+  useEffect(() => {
     document.body.style.overflow = mobileOpen ? "hidden" : "";
     return () => {
       document.body.style.overflow = "";
     };
   }, [mobileOpen]);
+
+  const desktopLink = (active: boolean) =>
+    active
+      ? "font-semibold text-[#1380d4]"
+      : "font-normal text-[#333] hover:text-[#1380d4]";
+
+  const mobileLink = (active: boolean) =>
+    active ? "font-semibold text-[#c8f090]" : "font-normal text-white/90 hover:text-white";
+
+  const homeActive = isPathActive(pathname, "/");
+  const servicesActive = isAnyServiceActive(pathname);
+  const aboutActive = isPathActive(pathname, "/about-us");
+  const contactActive = isPathActive(pathname, "/contact");
 
   return (
     <header className="w-full overflow-visible">
@@ -84,30 +108,55 @@ export default function LendSmartHeader() {
             {/* DESKTOP NAV — middle column so it stays centered in the bar */}
             <nav className="hidden items-center justify-center gap-8 text-[14px] md:col-start-2 md:row-start-1 md:flex">
 
-              <Link href="/" className="text-[#333] hover:text-[#1380d4]">Home</Link>
+              <Link
+                href="/"
+                className={`transition-colors ${desktopLink(homeActive)}`}
+                aria-current={homeActive ? "page" : undefined}
+              >
+                Home
+              </Link>
 
               {/* SERVICES */}
-              <div className="relative group flex items-center cursor-pointer">
-                <span className="flex items-center text-[#333] hover:text-[#1380d4]">
+              <div className="group relative flex cursor-pointer items-center">
+                <span className={`flex items-center transition-colors ${desktopLink(servicesActive)}`}>
                   Services
                   <Arrow open={false} />
                 </span>
 
-                <div className="absolute left-0 top-full mt-2 w-[260px] bg-[#f4f4f4] shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50">
-                  {services.map((service) => (
-                    <Link
-                      key={service.label}
-                      href={service.href}
-                      className="block px-4 py-3 text-[14px] text-[#333] hover:bg-[#e5e5e5]"
-                    >
-                      {service.label}
-                    </Link>
-                  ))}
+                <div className="invisible absolute left-0 top-full z-50 mt-2 w-[260px] bg-[#f4f4f4] opacity-0 shadow-lg transition-all duration-300 group-hover:visible group-hover:opacity-100">
+                  {services.map((service) => {
+                    const active = isPathActive(pathname, service.href);
+                    return (
+                      <Link
+                        key={service.label}
+                        href={service.href}
+                        className={`block px-4 py-3 text-[14px] transition-colors ${
+                          active
+                            ? "bg-[#e8e8e8] font-semibold text-[#1380d4]"
+                            : "text-[#333] hover:bg-[#e5e5e5]"
+                        }`}
+                      >
+                        {service.label}
+                      </Link>
+                    );
+                  })}
                 </div>
               </div>
 
-              <Link href="/about-us" className="text-[#333] hover:text-[#1380d4]">About Us</Link>
-              <Link href="/contact" className="text-[#333] hover:text-[#1380d4]">Contact Us</Link>
+              <Link
+                href="/about-us"
+                className={`transition-colors ${desktopLink(aboutActive)}`}
+                aria-current={aboutActive ? "page" : undefined}
+              >
+                About Us
+              </Link>
+              <Link
+                href="/contact"
+                className={`transition-colors ${desktopLink(contactActive)}`}
+                aria-current={contactActive ? "page" : undefined}
+              >
+                Contact Us
+              </Link>
 
             </nav>
 
@@ -124,46 +173,83 @@ export default function LendSmartHeader() {
         <div className={`md:hidden fixed inset-0 z-[100] ${mobileOpen ? "visible" : "invisible"}`}>
           <div className="absolute inset-0 bg-black/60" onClick={() => setMobileOpen(false)} />
 
-          <nav className={`absolute right-0 top-0 h-full w-[280px] bg-[#2d5010] p-5 transition-transform ${mobileOpen ? "translate-x-0" : "translate-x-full"}`}>
+          <nav
+            className={`absolute right-0 top-0 flex h-full w-[280px] flex-col bg-[#2d5010] p-5 transition-transform ${mobileOpen ? "translate-x-0" : "translate-x-full"}`}
+          >
 
-            <div className="flex justify-end mb-4">
-              <button onClick={() => setMobileOpen(false)}>{X}</button>
+            <div className="mb-4 flex justify-end">
+              <button type="button" className="p-1" onClick={() => setMobileOpen(false)} aria-label="Close menu">
+                {X}
+              </button>
             </div>
 
-            <ul className="flex flex-col gap-3 text-white">
-
-              <Link href="/" onClick={() => setMobileOpen(false)}>Home</Link>
+            <ul className="flex flex-1 flex-col gap-3 overflow-y-auto">
+              <li>
+                <Link
+                  href="/"
+                  className={`block py-1 transition-colors ${mobileLink(homeActive)}`}
+                  aria-current={homeActive ? "page" : undefined}
+                  onClick={() => setMobileOpen(false)}
+                >
+                  Home
+                </Link>
+              </li>
 
               {/* MOBILE SERVICES */}
               <li>
                 <button
+                  type="button"
                   onClick={() => setServiceOpen(!serviceOpen)}
-                  className="flex items-center justify-between w-full"
+                  className={`flex w-full items-center justify-between py-1 text-left transition-colors ${mobileLink(servicesActive)}`}
                 >
                   Services
                   <Arrow open={serviceOpen} />
                 </button>
 
                 {serviceOpen && (
-                  <div className="pl-4 mt-2">
-                    {services.map((service) => (
-                      <Link
-                        key={service.label}
-                        href={service.href}
-                        className="block py-2 text-sm text-white/80"
-                        onClick={() => setMobileOpen(false)}
-                      >
-                        {service.label}
-                      </Link>
-                    ))}
+                  <div className="mt-2 pl-4">
+                    {services.map((service) => {
+                      const active = isPathActive(pathname, service.href);
+                      return (
+                        <Link
+                          key={service.label}
+                          href={service.href}
+                          className={`block py-2 text-sm transition-colors ${
+                            active ? "font-semibold text-[#c8f090]" : "text-white/80 hover:text-white"
+                          }`}
+                          onClick={() => setMobileOpen(false)}
+                        >
+                          {service.label}
+                        </Link>
+                      );
+                    })}
                   </div>
                 )}
               </li>
 
-              <Link href="/about-us" onClick={() => setMobileOpen(false)}>About Us</Link>
-              <Link href="/contact" onClick={() => setMobileOpen(false)}>Contact Us</Link>
-
+              <li>
+                <Link
+                  href="/about-us"
+                  className={`block py-1 transition-colors ${mobileLink(aboutActive)}`}
+                  aria-current={aboutActive ? "page" : undefined}
+                  onClick={() => setMobileOpen(false)}
+                >
+                  About Us
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/contact"
+                  className={`block py-1 transition-colors ${mobileLink(contactActive)}`}
+                  aria-current={contactActive ? "page" : undefined}
+                  onClick={() => setMobileOpen(false)}
+                >
+                  Contact Us
+                </Link>
+              </li>
             </ul>
+
+            <SocialLinks className="mt-6 flex shrink-0 items-center justify-center gap-5 border-t border-white/20 pt-6 text-white" />
           </nav>
         </div>
       </div>

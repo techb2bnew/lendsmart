@@ -26,7 +26,7 @@ export default function ContactFormMapSection() {
             </div>
           </div>
 
-          <div className="w-full max-w-[760px] justify-self-end rounded-[22px] border border-[#9bc179] bg-[#f7f7f7] p-5 sm:p-6 relative right-[0px] bottom-2 lg:right-[120]">
+          <div className="w-full max-w-[760px] justify-self-end rounded-[22px] border border-[#9bc179] bg-[#f7f7f7] p-5 sm:p-6 relative right-[0px] bottom-0 lg:right-[120]">
             <h2 className="text-[34px] font-extrabold leading-[1.1] text-black sm:text-[44px]">
               Reach & Get Touch
               <br />

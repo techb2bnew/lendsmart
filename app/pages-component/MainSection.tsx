@@ -71,9 +71,9 @@ export default function MainSection({
               )}
             </h1>
 
-            <p className="mt-4 text-[14px] leading-6 text-[#333333]">{description}</p>
+            <p className="mt-4 text-[15px] leading-6 text-[#333333]">{description}</p>
             {extraDescription && (
-              <p className="mt-2 text-[14px] leading-6 text-[#333333]">{extraDescription}</p>
+              <p className="mt-2 text-[15px] leading-6 text-[#333333]">{extraDescription}</p>
             )}
 
             {featurePoints && featurePoints.length > 0 && (

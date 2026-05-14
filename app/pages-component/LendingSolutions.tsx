@@ -79,7 +79,7 @@ export default function LendingSolutions({
         <div className="rounded-[12px] bg-[#171717] p-4 shadow-[0_18px_40px_rgba(0,0,0,0.2)] sm:p-6 lg:p-7">
           <div className="grid grid-cols-1 gap-6 lg:grid-cols-[1.1fr_0.9fr] lg:items-stretch">
             <div>
-              <h2 className="text-[28px] font-extrabold leading-tight text-white sm:text-[34px] lg:text-[40px]">
+              <h2 className="text-[24px] font-extrabold leading-tight text-white sm:text-[34px] lg:text-[40px]">
                 {title}
               </h2>
               <p className="mt-1 text-[14px] leading-6 text-[#cfcfcf]">

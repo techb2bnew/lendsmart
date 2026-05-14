@@ -16,7 +16,7 @@ export default function AboutCommitmentSection() {
         </div>
 
         <div>
-          <h2 className="text-[30px] font-extrabold leading-tight text-black sm:text-[36px] lg:text-[40px]">
+          <h2 className="text-[24px] font-extrabold leading-tight text-black sm:text-[36px] lg:text-[40px]">
             Our Commitment to You
           </h2>
           <div className="mt-4 border-l-[5px] border-[#79c44a] pl-4">

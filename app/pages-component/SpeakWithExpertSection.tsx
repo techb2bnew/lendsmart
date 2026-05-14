@@ -41,7 +41,7 @@ export default function SpeakWithExpertSection() {
         <div>
           <div className="flex items-center gap-3">
             <span className="mt-1 h-[60px] w-[6px] rounded-full bg-[#79c44a] sm:h-[60px]" />
-            <h2 className="text-[34px] font-extrabold leading-[1.1] text-black sm:text-[42px]">
+            <h2 className="text-[24px] font-extrabold leading-[1.1] text-black sm:text-[42px]">
               Speak With a Loan Expert Today
             </h2>
           </div>

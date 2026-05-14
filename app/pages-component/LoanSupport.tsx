@@ -89,7 +89,7 @@ export default function LoanSupport({
           {/* Right content */}
           <div className="relative mt-7 lg:mt-4">
             <div className="relative z-20 lg:pl-2">
-              <h2 className="text-[28px] font-extrabold lg:leading-[55px] tracking-[-0.02em] text-black sm:text-[36px] lg:text-[40px]">
+              <h2 className="text-[24px] font-extrabold lg:leading-[55px] tracking-[-0.02em] text-black sm:text-[36px] lg:text-[40px]">
                 {highlightText && (
                     <span className="text-[#7cc242]">
                     {highlightText}

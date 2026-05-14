@@ -21,7 +21,7 @@ export default function PersonalLoanBenefits({
     <section className={`px-4 py-8 sm:py-10 lg:px-8 lg:py-12 ${sectionBgClassName}`}>
       <div className="mx-auto grid max-w-[1440px] grid-cols-1 items-center gap-8 lg:grid-cols-[1.1fr_0.9fr] lg:gap-12">
         <div>
-          <h2 className="text-[34px] font-extrabold leading-[1.1] tracking-[-0.02em] text-black sm:text-[42px]">
+          <h2 className="text-[24px] font-extrabold leading-[1.1] tracking-[-0.02em] text-black sm:text-[42px]">
             {title}
           </h2>
 

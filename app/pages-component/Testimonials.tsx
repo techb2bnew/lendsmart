@@ -64,7 +64,7 @@ const handleNext = () => {
           <div className="relative z-30 lg:pt-10">
             <div className=" ">
               {title && (
-                <h2 className="text-[28px] font-extrabold leading-[1.08] tracking-[-0.02em] text-white sm:text-[34px] lg:text-[40px]">
+                <h2 className="text-[24px] font-extrabold leading-[1.08] tracking-[-0.02em] text-white sm:text-[34px] lg:text-[40px]">
                   {title}
                 </h2>
               )}

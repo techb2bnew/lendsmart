@@ -13,7 +13,7 @@ export default function AboutAccessSection() {
     <section className="bg-white  pb-20">
       <div className="mx-auto max-w-[1440px]">
         <div className="text-center">
-          <h2 className="text-[30px] font-extrabold text-black sm:text-[36px]">
+          <h2 className="text-[24px] font-extrabold text-black sm:text-[36px]">
             Access to <span className="text-[#7cc242]">Multiple Lenders</span>
           </h2>
           <p className="mx-auto mt-2 max-w-[760px] text-[14px] leading-6 text-[#2f2f2f] px-2">

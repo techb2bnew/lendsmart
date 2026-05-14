@@ -39,7 +39,7 @@ export default function HowWeCanHelpYou({
         </div>
 
         <div>
-          <h2 className="text-[30px] font-extrabold leading-[1.1] tracking-[-0.02em] text-black sm:text-[38px]">
+          <h2 className="text-[24px] font-extrabold leading-[1.1] tracking-[-0.02em] text-black sm:text-[38px]">
             {title}
           </h2>
 

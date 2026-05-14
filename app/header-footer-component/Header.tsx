@@ -248,8 +248,8 @@ export default function LendSmartHeader() {
                 </Link>
               </li>
             </ul>
-
-            <SocialLinks className="mt-6 flex shrink-0 items-center justify-center gap-5 border-t border-white/20 pt-6 text-white" />
+                <p className="text-white text-sm">Follow us on</p>
+            <SocialLinks className="mt-2 flex shrink-0 items-center justify-start gap-5 border-t border-white/20 pt-2 text-white" />
           </nav>
         </div>
       </div>

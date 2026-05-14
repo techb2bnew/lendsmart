@@ -60,7 +60,7 @@ export default function WhyChoose({
           {/* Left content */}
           <div className="relative lg:pt-6 pb-0 md:pb-20">
             <div className="mt-5 lg:mt-4 ">
-              <h2 className="text-[28px] font-extrabold leading-[1.08] tracking-[-0.02em] text-black sm:text-[32px] lg:text-[40px]">
+              <h2 className="text-[24px] font-extrabold leading-[1.08] tracking-[-0.02em] text-black sm:text-[32px] lg:text-[40px]">
                 {titlePrefix} <span className="text-[#1380d4]">{titleBlue}</span>
                 <span className="text-[#7cc242]">{titleGreen}</span> {titleSuffix}
               </h2>

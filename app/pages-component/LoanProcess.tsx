@@ -64,7 +64,7 @@ export default function LoanProcess({
       <div className="max-w-[1440px] mx-auto">
         {/* heading */}
         <div className="mx-auto max-w-full text-center">
-          <h2 className="text-[28px] sm:text-[34px] lg:text-[44px] xl:text-[50px] font-extrabold leading-[1.08] tracking-[-0.02em] text-black">
+          <h2 className="text-[24px] sm:text-[34px] lg:text-[44px] xl:text-[50px] font-extrabold leading-[1.08] tracking-[-0.02em] text-black">
             {normalText || "How Our"}{" "}
             <span className="text-[#7cc242]">{highlightText || "Loan Process"}</span>{" "}
             {breakText || "Works"}

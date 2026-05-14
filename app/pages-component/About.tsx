@@ -62,7 +62,7 @@ export default function About({description1, description2, gaolHeading, gaolDesc
         <div className="grid grid-cols-1 items-end">
           {/* left */}
           <div className="pt-5 lg:pt-2">
-            <h2 className="text-[28px] sm:text-[34px] lg:text-[40px] font-extrabold leading-normal md:leading-[1.05] tracking-[-0.02em] text-black">
+            <h2 className="text-[24px] sm:text-[34px] lg:text-[40px] font-extrabold leading-normal md:leading-[1.05] tracking-[-0.02em] text-black">
               About <span className="text-[#1380d4]">Lend</span>
               <span className="text-[#7cc242]">Smart</span> Mortgages
             </h2>

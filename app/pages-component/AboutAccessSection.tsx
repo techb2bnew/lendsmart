@@ -16,12 +16,12 @@ export default function AboutAccessSection() {
           <h2 className="text-[30px] font-extrabold text-black sm:text-[36px]">
             Access to <span className="text-[#7cc242]">Multiple Lenders</span>
           </h2>
-          <p className="mx-auto mt-2 max-w-[760px] text-[14px] leading-6 text-[#2f2f2f]">
+          <p className="mx-auto mt-2 max-w-[760px] text-[14px] leading-6 text-[#2f2f2f] px-2">
             Searching for loans individually can be time-consuming and confusing. LendSmart Mortgages works with a broad panel of lenders, giving clients access to a wide range of loan products and financing options.
           </p>
         </div>
 
-        <div className="relative mt-6 overflow-hidden rounded-[10px]">
+        <div className="relative mt-6 overflow-hidden rounded-[10px] px-5">
           <div className="relative h-[180px] sm:h-[300px] lg:h-[550px]">
             <Image src="/about/multiple.png" alt="Access to lenders" fill className="object-cover" />
           </div> 

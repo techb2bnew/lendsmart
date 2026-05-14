@@ -11,7 +11,7 @@ export default function AboutStatsSection() {
       <div className="mx-auto grid max-w-[1440px] grid-cols-2 gap-6 text-center sm:grid-cols-4">
         {stats.map((item) => (
           <div key={`${item.value}-${item.label}`}>
-            <p className="text-[30px] font-extrabold leading-none text-black">{item.value}</p>
+            <p className="text-[22px] lg:text-[30px] font-extrabold leading-none text-black">{item.value}</p>
             <p className="mt-2 text-[12px] text-[#222] sm:text-[13px]">{item.label}</p>
           </div>
         ))}

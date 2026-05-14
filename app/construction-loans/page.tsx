@@ -92,9 +92,9 @@ export default function ConstructionLoansPage() {
         image="/service/construction-main.png"
         sectionBgClassName="bg-[#E8F5E9]"
         callText="Call Now"
-        callLink="tel:0413206624"
+        callLink="tel:0413 206 624"
         chatText="Chat With Us"
-        chatLink="https://wa.me/0413206624"
+        chatLink="https://wa.me/0413 206 624"
       />
 
       <div className="py-6 sm:py-8 lg:py-10">
@@ -125,9 +125,9 @@ export default function ConstructionLoansPage() {
         subtitle="There are so many Loan & financing options"
         solutions={constructionOptions}
         chatButtonText="Click here to chat"
-        chatButtonLink="https://wa.me/0413206624"
+        chatButtonLink="https://wa.me/0413 206 624"
         ctaButtonText="Get Loan Options"
-        ctaButtonLink="tel:0413206624"
+        ctaButtonLink="tel:0413 206 624"
         rightImage="/service/construction-work.png"
         rightImageClassName="object-cover object-center"
       />
@@ -162,7 +162,7 @@ export default function ConstructionLoansPage() {
         description="Choosing the right loan can be complicated. At LendSmart Mortgages, we simplify the process and help you make informed decisions."
         steps={constructionLoanSteps}
         buttonText="Chat With Us"
-        buttonLink="https://wa.me/0413206624"
+        buttonLink="https://wa.me/0413 206 624"
       />
 
       <ServiceStatsBar

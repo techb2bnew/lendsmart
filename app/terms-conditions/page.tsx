@@ -34,7 +34,7 @@ export default function TermsConditions() {
           <p className="text-gray-600">
             Phone:{" "}
             <a
-              href="tel:0413206624"
+              href="tel:0413 206 624"
               className="text-blue-500 hover:underline"
             >
               0413 206 624

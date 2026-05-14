@@ -33,9 +33,9 @@ export default function MainSection({
   featurePointIcon,
   sectionBgClassName = "bg-white",
   callText = "Call Now",
-  callLink = "tel:0413206624",
+  callLink = "tel:0413 206 624",
   chatText = "Chat With Us",
-  chatLink = "https://wa.me/0413206624",
+  chatLink = "https://wa.me/0413 206 624",
 }: MainSectionProps) {
   const callIcon = (
     <svg width={21} height={21} viewBox="0 0 31 31" fill="none" xmlns="http://www.w3.org/2000/svg">

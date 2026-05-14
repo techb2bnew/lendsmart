@@ -68,7 +68,7 @@ export default function PrivacyPolicy() {
             <p>
               The Privacy Act gives you rights to access the personal information we hold about you, and you can ask us to correct the information if it is inaccurate.
 
-              You can gain access to the information we hold about you by contacting us at 0413206624 or outsource financial  on 1300 781 481.
+              You can gain access to the information we hold about you by contacting us at 0413 206 624 or outsource financial  on 1300 781 481.
             </p>
           </div>
 

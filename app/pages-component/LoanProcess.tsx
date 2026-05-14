@@ -45,7 +45,7 @@ const defaultSteps: LoanProcessStep[] = [
   {
     num: 5,
     title: "Approval &\nSettlement",
-    desc: "Reach out by phone, WhatsApp, or online form to discuss your loan needs.",
+    desc: "Final approval is completed, and settlement is arranged smoothly.",
     icon: "/approved.png",
   },
 ];
@@ -56,7 +56,7 @@ export default function LoanProcess({
   breakText,
   description,
   buttonText,
-  buttonLink = "https://wa.me/0413206624",
+  buttonLink = "https://wa.me/0413 206 624",
   steps = defaultSteps,
 }: LoanProcessProps) {
   return (

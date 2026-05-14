@@ -6,7 +6,7 @@ const stats = [
   { value: 250, suffix: "M+", label: "In Loans Settled" },
   { value: 45, suffix: "+", label: "Lenders on Panel" },
   { value: 12, suffix: "+", label: "Years Combined Experience" },
-  // { value: '', suffix: "", label: "Serving Clients Across Austrailia" },
+  // { value: '', suffix: "", label: "Serving Clients Across Australia" },
 ];
 
 function CountUp({
@@ -104,7 +104,7 @@ export default function Stats() {
 
            <div className="text-center"> 
               <div className="mt-3 text-[13px] font-medium leading-5 text-black sm:text-[14px]">
-                Serving Clients Across Austrailia
+                Serving Clients Across Australia
               </div>
             </div>
         </div>

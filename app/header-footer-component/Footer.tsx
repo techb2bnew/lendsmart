@@ -210,7 +210,7 @@ export default function Footer() {
                   </a>
                 </li>
                 <li className="pt-2">
-                  <a href="tel:0413206624" className="transition hover:text-[#1380d4]">
+                  <a href="tel:0413 206 624" className="transition hover:text-[#1380d4]">
                     0413 206 624
                   </a>
                 </li>
@@ -237,7 +237,7 @@ export default function Footer() {
 
           {/* Bottom row */}
           <div className="flex flex-col gap-3 pt-6 text-[14px] text-[#555] lg:flex-row lg:items-center lg:justify-between">
-            <p>©2026 All Rights Reserved | LendSmartmortgages | <a href="/privacy-policy" className="transition hover:text-[#1380d4]">
+            <p>©2026 All Rights Reserved | LendSmart Mortgages | <a href="/privacy-policy" className="transition hover:text-[#1380d4]">
               Privacy Policy
             </a></p>
           </div>

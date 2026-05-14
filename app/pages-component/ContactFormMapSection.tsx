@@ -11,7 +11,7 @@ export default function ContactFormMapSection() {
               <p className="text-sm font-bold">Chat with Live!</p>
               <p className="mt-2 text-[11px] leading-4">Need help now? Chat with a loan expert instantly on WhatsApp</p>
               <a
-                href="https://wa.me/0413206624"
+                href="https://wa.me/0413 206 624"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="mt-3 inline-flex items-center gap-2 rounded-[6px] bg-white px-2 py-1 text-[11px] font-semibold text-[#2e6f11]"

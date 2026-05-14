@@ -16,8 +16,24 @@ export default function SpeakWithExpertSection() {
             <Image src="/contact/speak.png" alt="Speak with expert" fill className="object-cover" />
           </div>
           <div className="pt-4 text-[15px] leading-7 text-[#1f1f1f]">
-            <p><span className="font-semibold">Phone:</span> 0413 206 624</p>
-            <p><span className="font-semibold">Email:</span> admin@lendsmartmortgages.com.au</p>
+            <p>
+              <span className="font-semibold">Phone:</span>{" "}
+              <a
+                href="tel:+61413206624"
+                className="underline underline-offset-2 hover:text-[#3f7416]"
+              >
+                0413 206 624
+              </a>
+            </p>
+            <p>
+              <span className="font-semibold">Email:</span>{" "}
+              <a
+                href="mailto:admin@lendsmartmortgages.com.au"
+                className="underline underline-offset-2 hover:text-[#3f7416]"
+              >
+                admin@lendsmartmortgages.com.au
+              </a>
+            </p>
             <p><span className="font-semibold">Location:</span> Australia</p>
           </div>
         </div>

@@ -1,8 +1,12 @@
+"use client";
+
 import Image from "next/image";
+import { useState } from "react";
 
 export default function ContactFormMapSection() {
-  return (
-    <section className="bg-white px-4 py-10 lg:px-10 lg:py-14">
+  const [phone, setPhone] = useState("");
+
+  return (    <section className="bg-white px-4 py-10 lg:px-10 lg:py-14">
       <div className="mx-auto max-w-[1440px]">
         <div className="grid grid-cols-1 items-end gap-[8px] lg:grid-cols-[0.95fr_1.05fr]">
           <div className="relative mx-auto h-[420px] w-full max-w-[430px] sm:h-[480px] lg:h-[520px] lg:max-w-[520px] lg:left-[110px] z-10">
@@ -30,7 +34,16 @@ export default function ContactFormMapSection() {
             </h2>
             <div className="mt-5 grid grid-cols-1 gap-3 sm:grid-cols-2">
               <input type="text" className="h-11 rounded-full bg-white px-4 text-[14px] outline-none" placeholder="Full Name" />
-              <input type="number" className="h-11 rounded-full bg-white px-4 text-[14px] outline-none" placeholder="Phone Number" />
+              <input
+                type="tel"
+                inputMode="numeric"
+                pattern="[0-9]*"
+                autoComplete="tel"
+                value={phone}
+                onChange={(e) => setPhone(e.target.value.replace(/\D/g, ""))}
+                className="h-11 rounded-full bg-white px-4 text-[14px] outline-none"
+                placeholder="Phone Number"
+              />
               <input type="email" className="h-11 rounded-full bg-white px-4 text-[14px] outline-none" placeholder="Email Address" />
               <select
                 defaultValue=""
@@ -63,7 +76,10 @@ export default function ContactFormMapSection() {
               </span>
             </div>
             <div className="mt-7 flex flex-wrap gap-3">
-              <button className="inline-flex h-[44px] items-center justify-center gap-4 rounded-full border border-[#81b95d] bg-white px-8 text-[14px] font-semibold text-[#5f9736]">
+              <button
+                type="button"
+                className="inline-flex h-[44px] cursor-pointer items-center justify-center gap-4 rounded-full border border-[#81b95d] bg-white px-8 text-[14px] font-semibold text-[#5f9736] transition-colors duration-200 hover:border-[#5f9736] hover:bg-[#5f9736] hover:text-white hover:shadow-md"
+              >
                 <span>Submit Now</span>
                 <span>→</span>
               </button>

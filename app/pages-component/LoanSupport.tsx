@@ -73,7 +73,7 @@ export default function LoanSupport({
         <div className="relative grid grid-cols-1 gap-10 lg:grid-cols-[460px_1fr] lg:items-start lg:gap-8">
           {/* Left image */}
           <div className="relative z-10 flex justify-center lg:justify-start">
-            <div className="relative h-[370px] w-full max-w-[360px] sm:h-[400px] sm:max-w-[400px] lg:h-[520px] lg:max-w-[430px]">
+            <div className="relative h-[auto] w-full max-w-[360px] sm:h-[400px] sm:max-w-[400px] lg:h-[520px] lg:max-w-[430px]">
               <Image
                 src={imageSrc}
                 alt={imageAlt}

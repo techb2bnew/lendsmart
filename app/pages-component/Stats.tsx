@@ -104,7 +104,7 @@ export default function Stats() {
 
            <div className="text-center"> 
               <div className="mt-3 text-[13px] font-medium leading-5 text-black sm:text-[14px]">
-                Serving Clients Across Australia
+                Serving Clients <span className="text-[#79c44a]">Across Australia</span>
               </div>
             </div>
         </div>

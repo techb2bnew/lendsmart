@@ -164,7 +164,7 @@ export default function AssetFinancePage() {
         buttonLink="https://wa.me/0413 206 624"
       />
 
-      <ServiceStatsBar
+      {/* <ServiceStatsBar
         items={[
           { kind: "count", prefix: "$", value: 250, suffix: "M+", label: "in loans settled" },
           { kind: "count", value: 45, suffix: "+", label: "lenders on panel" },
@@ -178,7 +178,7 @@ export default function AssetFinancePage() {
             ),
           },
         ]}
-      />
+      /> */}
 
 <Testimonials
         title="Testimonials"

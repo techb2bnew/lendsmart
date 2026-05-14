@@ -103,10 +103,10 @@ export default function ResidentialLoansPage() {
         ourGoalDescription="simple, transparent, and stress-free."
         collageImageSrc="/service/about.png"
         collageImageAlt="Residential loans and family"
-        stat1={{ value: 78, suffix: "%", label: "Business from Referrals" }}
+        stat1={{ value: 250, prefix: "$", suffix: "", label: "Business from Referrals" }}
         stat2={{ value: 45, suffix: "+", label: "Minute Verbal Commitment" }}
         clientCount={8685}
-        clientCountLabel="Popular Clients"
+        clientCountLabel="Popular Clients"  
         clientImages={[
           "1507003211169-0a1dd7228f2d",
           "1494790108377-be9c29b29330",
@@ -128,7 +128,7 @@ export default function ResidentialLoansPage() {
           buttonText="Chat with us"
           buttonLink="https://wa.me/0413 206 624"
         />
-  <div className="bg-[#EEF4E4]"> 
+  {/* <div className="bg-[#EEF4E4]"> 
       <ServiceStatsBar
         items={[
           { kind: "count", prefix: "$", value: 250, suffix: "M+", label: "in loans settled" },
@@ -145,7 +145,7 @@ export default function ResidentialLoansPage() {
           },
         ]}
       />
-      </div>
+      </div> */}
 
       <Testimonials
         title="Testimonials"

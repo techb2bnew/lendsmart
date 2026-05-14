@@ -97,7 +97,7 @@ export default function About({description1, description2, gaolHeading, gaolDesc
           <div className="relative grid grid-cols-1 gap-8 sm:grid-cols-2 sm:gap-6 justify-center lg:justify-end">
             <div>
             {/* stats */}
-            <div className="mt-10 md:mt-16 flex items-start gap-14 sm:gap-20">
+            {/* <div className="mt-10 md:mt-16 flex items-start gap-14 sm:gap-20">
               <div className="min-w-[110px]">
                 <div className="text-[25px] md:text-[40px] leading-none font-semibold text-black">
                   <Counter end={78} suffix="%" />
@@ -115,7 +115,7 @@ export default function About({description1, description2, gaolHeading, gaolDesc
                   Minute Verbal Commitment
                 </div>
               </div>
-            </div>
+            </div> */}
 
             {/* divider */}
             <div className="mt-8 h-[1px] w-full max-w-[500px] bg-[#d7dfca]" />

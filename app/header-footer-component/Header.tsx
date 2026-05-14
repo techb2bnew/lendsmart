@@ -74,15 +74,15 @@ export default function LendSmartHeader() {
 
         {/* TOP */}
         <div className="bg-[#F4F4F4] border-y border-gray-300 px-4 lg:px-5">
-          <div className="max-w-[1440px] mx-auto flex items-center justify-between py-2">
+          <div className="mx-auto grid max-w-[1440px] grid-cols-[1fr_auto] items-center gap-3 py-2 md:grid-cols-[1fr_auto_1fr] md:gap-4">
 
             {/* Logo */}
-            <Link href="/" onClick={() => setMobileOpen(false)}>
+            <Link href="/" className="justify-self-start" onClick={() => setMobileOpen(false)}>
               <Image src="/LendSmart-Mortgages-Logo- 2.png" alt="logo" width={200} height={70} priority />
             </Link>
 
-            {/* DESKTOP NAV */}
-            <nav className="hidden md:flex items-center flex-1 justify-center gap-8 text-[14px]">
+            {/* DESKTOP NAV — middle column so it stays centered in the bar */}
+            <nav className="hidden items-center justify-center gap-8 text-[14px] md:col-start-2 md:row-start-1 md:flex">
 
               <Link href="/" className="text-[#333] hover:text-[#1380d4]">Home</Link>
 
@@ -111,10 +111,12 @@ export default function LendSmartHeader() {
 
             </nav>
 
-            {/* MOBILE BTN */}
-            <button className="md:hidden" onClick={() => setMobileOpen(!mobileOpen)}>
-              {mobileOpen ? X : Menu}
-            </button>
+            {/* Mobile menu toggle / desktop right column (balances logo width for centered nav) */}
+            <div className="justify-self-end md:col-start-3 md:row-start-1">
+              <button type="button" className="md:hidden" onClick={() => setMobileOpen(!mobileOpen)}>
+                {mobileOpen ? X : Menu}
+              </button>
+            </div>
           </div>
         </div>
 

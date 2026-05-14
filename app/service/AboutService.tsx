@@ -10,8 +10,8 @@ export type AboutServiceProps = {
   ourGoalDescription: string;
   collageImageSrc: string;
   collageImageAlt?: string;
-  stat1: { value: number; suffix: string; label: string };
-  stat2: { value: number; suffix: string; label: string };
+  stat1: { value: number; suffix: string; label: string; prefix?: string };
+  stat2: { value: number; suffix: string; label: string; prefix?: string };
   clientCount: number;
   clientCountLabel: string;
   clientImages: string[];
@@ -100,8 +100,18 @@ export default function AboutService({
             {showStats ? (
               <>
                 <div className="flex flex-wrap items-start gap-8 sm:gap-12 md:gap-16">
-                  <CountNumber value={stat1.value} suffix={stat1.suffix} label={stat1.label} />
-                  <CountNumber value={stat2.value} suffix={stat2.suffix} label={stat2.label} />
+                  <CountNumber
+                    value={250}
+                    prefix={'$'}
+                    suffix={'M+'}
+                    label={'in loans settled'}
+                  />
+                  <CountNumber
+                    value={45}
+                    prefix={stat2.prefix}
+                    suffix={stat2.suffix}
+                    label={'lenders on panel'}
+                  />
                 </div>
                 <div className="mt-6 h-px w-full max-w-[500px] bg-[#d7dfca] md:mt-8" />
               </>

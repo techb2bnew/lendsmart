@@ -73,7 +73,7 @@ export default function PersonalLoansPage() {
         heading="Flexible Personal Loans for Your Needs"
         description="Need funds fast for personal expenses? Get quick approvals and access funds without the hassle."
         featurePoints={["Fast Approvals", "High Approval Success Rate"]}
-        image="/service/personal-loan-main.png"
+        image="/service/personal-loan-mains.png"
         sectionBgClassName="bg-[#E8F5E9]"
         callText="Call Now"
         callLink="tel:0413 206 624"
@@ -130,7 +130,7 @@ export default function PersonalLoansPage() {
         buttonLink="https://wa.me/0413 206 624"
       />
 
-      <ServiceStatsBar
+      {/* <ServiceStatsBar
         items={[
           { kind: "count", prefix: "$", value: 250, suffix: "M+", label: "in loans settled" },
           { kind: "count", value: 45, suffix: "+", label: "lenders on panel" },
@@ -144,7 +144,7 @@ export default function PersonalLoansPage() {
             ),
           },
         ]}
-      />
+      /> */}
 
 <Testimonials
         title="Testimonials"

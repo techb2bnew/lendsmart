@@ -90,7 +90,7 @@ export default function ResidentialLoansPage() {
         image="/service/main.png"
         sectionBgClassName="bg-[#E8F5E9]"
         callText="Call Now"
-        callLink="tel:0413208624"
+        callLink="tel:0413206624"
         chatText="Chat With Us"
         chatLink="https://wa.me/0413206624"
       />

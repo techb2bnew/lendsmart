@@ -72,7 +72,7 @@ const Annocementbar = () => {
             </div>
             <div className="flex items-center gap-2 px-4 lg:px-5">
               {EmailIcon}
-              <a href="mailto:v.admin@lendsmartmortgages.com.au" className="truncate hover:underline hover:text-[#3f7416]">admin@lendsmartmortgages.com.au</a>
+              <a href="mailto:admin@lendsmartmortgages.com.au" className="truncate hover:underline hover:text-[#3f7416]">admin@lendsmartmortgages.com.au</a>
             </div>
             <div className="hidden items-center gap-2 px-4 lg:flex lg:px-5">
               {ClockIcon}

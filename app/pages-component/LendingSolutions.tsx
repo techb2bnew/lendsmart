@@ -64,7 +64,7 @@ export default function LendingSolutions({
   chatButtonText = "Chat With Us",
   chatButtonLink = "https://wa.me/0413206624",
   ctaButtonText = "Get Loan Options",
-  ctaButtonLink = "tel:0413208624",
+  ctaButtonLink = "tel:0413206624",
   topImage = "/about/main.png",
   bottomLeftImage = "/about/main.png",
   bottomRightImage = "/about/main.png",

@@ -33,7 +33,7 @@ export default function MainSection({
   featurePointIcon,
   sectionBgClassName = "bg-white",
   callText = "Call Now",
-  callLink = "tel:0413208624",
+  callLink = "tel:0413206624",
   chatText = "Chat With Us",
   chatLink = "https://wa.me/0413206624",
 }: MainSectionProps) {

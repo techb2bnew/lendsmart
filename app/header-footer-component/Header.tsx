@@ -84,11 +84,11 @@ export default function LendSmartHeader() {
             {/* DESKTOP NAV */}
             <nav className="hidden md:flex items-center flex-1 justify-center gap-8 text-[14px]">
 
-              <Link href="/" className="hover:text-[#1380d4]">Home</Link>
+              <Link href="/" className="text-[#333] hover:text-[#1380d4]">Home</Link>
 
               {/* SERVICES */}
               <div className="relative group flex items-center cursor-pointer">
-                <span className="flex items-center hover:text-[#1380d4]">
+                <span className="flex items-center text-[#333] hover:text-[#1380d4]">
                   Services
                   <Arrow open={false} />
                 </span>
@@ -98,7 +98,7 @@ export default function LendSmartHeader() {
                     <Link
                       key={service.label}
                       href={service.href}
-                      className="block px-4 py-3 text-[14px] hover:bg-[#e5e5e5]"
+                      className="block px-4 py-3 text-[14px] text-[#333] hover:bg-[#e5e5e5]"
                     >
                       {service.label}
                     </Link>
@@ -106,8 +106,8 @@ export default function LendSmartHeader() {
                 </div>
               </div>
 
-              <Link href="/about-us" className="hover:text-[#1380d4]">About Us</Link>
-              <Link href="/contact" className="hover:text-[#1380d4]">Contact Us</Link>
+              <Link href="/about-us" className="text-[#333] hover:text-[#1380d4]">About Us</Link>
+              <Link href="/contact" className="text-[#333]hover:text-[#1380d4]">Contact Us</Link>
 
             </nav>
 

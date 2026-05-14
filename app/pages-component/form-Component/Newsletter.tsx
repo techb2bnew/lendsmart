@@ -38,15 +38,26 @@ const Newsletter = () => {
         body: JSON.stringify({ email }),
       });
 
-      const data = await res.json();
+      let data: { message?: string } = {};
+      try {
+        data = await res.json();
+      } catch {
+        showMessage("Invalid response from server");
+        return;
+      }
 
       if (res.ok) {
         showMessage("Subscribed! 🎉");
         setEmail("");
       } else {
-        showMessage(data.message || "Failed");
+        showMessage(
+          data.message ||
+            (res.status === 503
+              ? "Service temporarily unavailable. Try again later."
+              : "Something went wrong")
+        );
       }
-    } catch (error) {
+    } catch {
       showMessage("Something went wrong");
     } finally {
       setLoading(false);
@@ -63,24 +74,31 @@ const Newsletter = () => {
             Our Newsletter
           </h3>
 
-          <div className="flex w-full max-w-[640px] flex-col gap-3 sm:flex-row">
+          <form
+            className="flex w-full max-w-[640px] flex-col gap-3 sm:flex-row"
+            onSubmit={(e) => {
+              e.preventDefault();
+              void handleSubscribe();
+            }}
+          >
             <input
               type="email"
               value={email}
               disabled={loading}
               onChange={(e) => setEmail(e.target.value)}
-              onKeyDown={(e) => e.key === "Enter" && handleSubscribe()} // ✅ Enter submit
               placeholder="Email"
+              autoComplete="email"
               className="min-h-[44px] flex-1 rounded-[4px] border border-[#9bd05c] bg-transparent px-4 py-2 text-[14px] text-black outline-none focus:border-[#4f9b15] placeholder:text-[#b9b9b9] disabled:opacity-50"
             />
 
-            <button type="button" onClick={handleSubscribe}
+            <button
+              type="submit"
               disabled={loading}
               className="h-[44px] rounded-[4px] bg-[#3f7416] hover:bg-[#0781c3] cursor-pointer px-6 text-[13px] font-medium text-white transition hover:shadow-lg disabled:opacity-50"
             >
               {loading ? "Subscribing..." : "Subscribe Now"}
             </button>
-          </div>
+          </form>
         </div>
 
         {message && (

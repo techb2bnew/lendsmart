@@ -92,7 +92,7 @@ export default function ConstructionLoansPage() {
         image="/service/construction-main.png"
         sectionBgClassName="bg-[#E8F5E9]"
         callText="Call Now"
-        callLink="tel:0413208624"
+        callLink="tel:0413206624"
         chatText="Chat With Us"
         chatLink="https://wa.me/0413206624"
       />
@@ -127,7 +127,7 @@ export default function ConstructionLoansPage() {
         chatButtonText="Click here to chat"
         chatButtonLink="https://wa.me/0413206624"
         ctaButtonText="Get Loan Options"
-        ctaButtonLink="tel:0413208624"
+        ctaButtonLink="tel:0413206624"
         rightImage="/service/construction-work.png"
         rightImageClassName="object-cover object-center"
       />

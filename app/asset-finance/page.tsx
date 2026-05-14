@@ -91,7 +91,7 @@ export default function AssetFinancePage() {
         image="/service/assets-main.png"
         sectionBgClassName="bg-[#E8F5E9]"
         callText="Call Now"
-        callLink="tel:0413208624"
+        callLink="tel:0413206624"
         chatText="Chat With Us"
         chatLink="https://wa.me/0413206624"
       />
@@ -126,7 +126,7 @@ export default function AssetFinancePage() {
         chatButtonText="Click here to chat"
         chatButtonLink="https://wa.me/0413206624"
         ctaButtonText="Get Loan Options"
-        ctaButtonLink="tel:0413208624"
+        ctaButtonLink="tel:0413206624"
         rightImage="/service/financed-assest.png"
         rightImageClassName="object-cover object-center"
       />

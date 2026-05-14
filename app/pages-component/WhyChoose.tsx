@@ -41,7 +41,7 @@ export default function WhyChoose({
   chatButtonText = "Chat With Us",
   chatButtonLink = "https://wa.me/0413206624",
   ctaButtonText = "Get Loan Options",
-  ctaButtonLink = "tel:0413208624",
+  ctaButtonLink = "tel:0413206624",
   personImage = "/about.png",
   personImageAlt = "LendSmart advisor",
   handImage = "/hand-holding.png",

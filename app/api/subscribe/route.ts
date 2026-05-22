@@ -1,5 +1,9 @@
 import { NextResponse } from "next/server";
 import nodemailer from "nodemailer";
+import {
+  buildAdminSubscriberEmail,
+  buildClientWelcomeEmail,
+} from "@/app/lib/subscribe-email-templates";
 
 type MailSetup = {
   transporter: nodemailer.Transporter;
@@ -75,6 +79,15 @@ async function sendWithResend(params: {
   }
 }
 
+function isResendDomainRestriction(message: string): boolean {
+  const lower = message.toLowerCase();
+  return (
+    lower.includes("verify a domain") ||
+    lower.includes("only send testing emails") ||
+    lower.includes("resend.dev")
+  );
+}
+
 export async function POST(request: Request) {
   try {
     const body = await request.json();
@@ -100,33 +113,8 @@ export async function POST(request: Request) {
       );
     }
 
-    const adminHtml = `
-        <div style="font-family: Arial, sans-serif;">
-          <h2>New Subscriber</h2>
-          <p><strong>Email:</strong> ${email}</p>
-        </div>
-      `;
-
-    const clientHtml = `
-        <div style="font-family: Arial, sans-serif; padding: 20px;">
-          <h2>Thank You for Subscribing!</h2>
-
-          <p>
-            You have successfully subscribed to the
-            <strong>LendSmart Newsletter</strong>.
-          </p>
-
-          <p>
-            We’ll keep you updated with the latest mortgage news,
-            offers, and financial insights.
-          </p>
-
-          <br />
-
-          <p>Regards,</p>
-          <h3>LendSmart Team</h3>
-        </div>
-      `;
+    const adminHtml = buildAdminSubscriberEmail(email);
+    const clientHtml = buildClientWelcomeEmail(email);
 
     const resendKey = process.env.RESEND_API_KEY?.trim();
     const resendFrom = process.env.RESEND_FROM?.trim();
@@ -238,6 +226,17 @@ export async function POST(request: Request) {
             "Microsoft 365 has Authenticated SMTP (SMTP AUTH) turned off for this mailbox. Your admin must enable it (per mailbox or tenant), or use another provider. Details: https://aka.ms/smtp_auth_disabled",
         },
         { status: 500 }
+      );
+    }
+
+    if (isResendDomainRestriction(raw)) {
+      return NextResponse.json(
+        {
+          success: false,
+          message:
+            "Resend is in test mode: with onboarding@resend.dev you can only email your own Resend account address. Verify lendsmartmortgages.com.au at https://resend.com/domains, then set RESEND_FROM to an address on that domain (e.g. LendSmart <newsletter@lendsmartmortgages.com.au>). Restart the dev server after updating .env.local.",
+        },
+        { status: 503 }
       );
     }
 

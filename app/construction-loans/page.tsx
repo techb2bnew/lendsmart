@@ -124,10 +124,8 @@ export default function ConstructionLoansPage() {
         title="How Construction Loans Work"
         subtitle="There are so many Loan & financing options"
         solutions={constructionOptions}
-        chatButtonText="Click here to chat"
+        chatButtonText="chat with us"
         chatButtonLink="https://wa.me/0413 206 624"
-        ctaButtonText="Get Loan Options"
-        ctaButtonLink="tel:0413 206 624"
         rightImage="/service/construction-work.png"
         rightImageClassName="object-cover object-center"
       />

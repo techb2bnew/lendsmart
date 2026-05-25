@@ -14,8 +14,6 @@ type LoanSupportProps = {
   };
   chatButtonText?: string;
   chatButtonLink?: string;
-  ctaButtonText?: string;
-  ctaButtonLink?: string;
   imageSrc?: string;
   imageAlt?: string;
   supportCardBgClassName?: string;
@@ -52,9 +50,7 @@ export default function LoanSupport({
     description: "Mortgages can help guide you through the financing process.",
   },
   chatButtonText = "Chat With Us",
-  chatButtonLink = "https://wa.me/0413 206 624",
-  ctaButtonText = "Get Loan Options",
-  ctaButtonLink = "tel:0413 206 624",
+  chatButtonLink = "https://wa.me/61413206624",
   imageSrc = "/loan-supported.png",
   imageAlt = "Loan support",
   supportCardBgClassName = "bg-[#F4FBE9]",
@@ -170,12 +166,6 @@ export default function LoanSupport({
                   >
                     <Image src="/icon.png" alt="Whatsapp" width={18} height={18} />
                     <span>{chatButtonText}</span>
-                  </a>
-                  <a
-                    href={ctaButtonLink}
-                    className="inline-flex items-center gap-2 rounded-[20px] border border-[#7cc242] px-4 py-2 text-[12px] font-semibold text-[#5f9735] hover:bg-[#7cc242] hover:text-white"
-                  >
-                    {ctaButtonText}
                   </a>
                 </div>
               )}

@@ -115,10 +115,8 @@ export default function CarTruckLoansPage() {
           title="Car /Truck Finance Options"
           subtitle="There are so many Loan & financing options"
           solutions={financeOptions}
-          chatButtonText="Click here to chat"
+          chatButtonText="chat with us"
           chatButtonLink="https://wa.me/0413 206 624"
-          ctaButtonText="Get Loan Options"
-          ctaButtonLink="tel:0413 206 624"
           rightImage="/service/finance.png"
           rightImageClassName="object-contain object-center"
         /> 

@@ -107,7 +107,7 @@ export default function CTABanner({
                           height={30}
                           className="object-contain"
                         />
-                        <span>Click here to chat</span>
+                        <span>chat with us</span>
                       </a>
                     )}
 

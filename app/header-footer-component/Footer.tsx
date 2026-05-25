@@ -9,7 +9,7 @@ import SocialLinks from "./SocialLinks";
 
 const quickLinks = [
   { label: "Home", href: "/" },
-  { label: "Services", href: "/residential-loans" },
+  // { label: "Services", href: "/residential-loans" },
   { label: "About Us", href: "/about-us" },
   { label: "Contact Us", href: "/contact" },
 ];

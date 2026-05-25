@@ -15,8 +15,6 @@ type LendingSolutionsProps = {
   solutions?: SolutionItem[];
   chatButtonText?: string;
   chatButtonLink?: string;
-  ctaButtonText?: string;
-  ctaButtonLink?: string;
   topImage?: string;
   bottomLeftImage?: string;
   bottomRightImage?: string;
@@ -62,9 +60,7 @@ export default function LendingSolutions({
   subtitle = "We assist individuals and businesses with tailored loan options.",
   solutions = defaultSolutions,
   chatButtonText = "Chat With Us",
-  chatButtonLink = "https://wa.me/0413 206 624",
-  ctaButtonText = "Get Loan Options",
-  ctaButtonLink = "tel:0413 206 624",
+  chatButtonLink = "https://wa.me/61413206624",
   topImage = "/about/main.png",
   bottomLeftImage = "/about/main.png",
   bottomRightImage = "/about/main.png",
@@ -134,12 +130,6 @@ export default function LendingSolutions({
                 >
                   <Image src="/icon.png" alt="Whatsapp" width={18} height={18} />
                   <span>{chatButtonText}</span>
-                </a>
-                <a
-                  href={ctaButtonLink}
-                  className="inline-flex items-center gap-2 rounded-[6px] border border-[#4e4e4e] px-3 py-2 text-[12px] font-semibold text-white hover:border-[#7cc242]"
-                >
-                  {ctaButtonText}
                 </a>
               </div>
             </div>

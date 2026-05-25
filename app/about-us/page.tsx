@@ -46,7 +46,6 @@ export default function AboutUsPage() {
           imageAlt="Family financial planning"
           showActions
           chatButtonText="Chat With Us"
-          ctaButtonText="Get Loan Options"
         />
         </div>
         <div className="-mt-10">
@@ -85,8 +84,7 @@ export default function AboutUsPage() {
               description: "Structured stage-based lending for property development projects.",
             },
           ]}
-          chatButtonText="Click here to chat"
-          ctaButtonText="Get Loan Options"
+          chatButtonText="chat with us"
           rightImage="/about/assest.png"
         />
         </div>
@@ -108,7 +106,6 @@ export default function AboutUsPage() {
             "Long-term client relationships",
           ]}
           chatButtonText="Chat With Us"
-          ctaButtonText="Get Loan Options"
           hideHandImage
         />
         </div>

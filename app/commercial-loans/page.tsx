@@ -154,10 +154,8 @@ export default function CommercialLoansPage() {
           title="What Can Be Financed"
           subtitle="There are so many Loan & financing options"
           solutions={financeSolutions}
-          chatButtonText="Click here to chat"
+          chatButtonText="chat with us"
           chatButtonLink="https://wa.me/0413 206 624"
-          ctaButtonText="Get Loan Options"
-          ctaButtonLink="tel:0413 206 624"
           topImage="/service/help5.png"
           bottomLeftImage="/service/help4.png"
           bottomRightImage="/service/help.png"

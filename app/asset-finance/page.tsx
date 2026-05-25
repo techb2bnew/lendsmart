@@ -123,10 +123,8 @@ export default function AssetFinancePage() {
         title="What Can Be Financed"
         subtitle="There are so many Loan & financing options"
         solutions={assetFinanceOptions}
-        chatButtonText="Click here to chat"
+        chatButtonText="chat with us"
         chatButtonLink="https://wa.me/0413 206 624"
-        ctaButtonText="Get Loan Options"
-        ctaButtonLink="tel:0413 206 624"
         rightImage="/service/financed-assest.png"
         rightImageClassName="object-cover object-center"
       />

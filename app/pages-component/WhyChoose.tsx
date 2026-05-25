@@ -20,8 +20,6 @@ type WhyChooseProps = {
   benefits?: string[];
   chatButtonText?: string;
   chatButtonLink?: string;
-  ctaButtonText?: string;
-  ctaButtonLink?: string;
   personImage?: string;
   personImageAlt?: string;
   handImage?: string;
@@ -39,9 +37,7 @@ export default function WhyChoose({
   benefitsHeading = "With LendSmart you receive:",
   benefits = defaultBenefits,
   chatButtonText = "Chat With Us",
-  chatButtonLink = "https://wa.me/0413 206 624",
-  ctaButtonText = "Get Loan Options",
-  ctaButtonLink = "tel:0413 206 624",
+  chatButtonLink = "https://wa.me/61413206624",
   personImage = "/about.png",
   personImageAlt = "LendSmart advisor",
   handImage = "/hand-holding.png",
@@ -99,12 +95,6 @@ export default function WhyChoose({
                       <Image src="/icon.png" alt="Whatsapp" width={18} height={18} className="object-contain" />
                     </span>
                     <span>{chatButtonText}</span>
-                  </a>
-                  <a
-                    href={ctaButtonLink}
-                    className="inline-flex h-[42px] items-center rounded-[20px] border border-[#7cc242] px-5 text-[13px] font-medium text-[#5d9532] transition hover:bg-[#7cc242] hover:text-white"
-                  >
-                    {ctaButtonText}
                   </a>
                 </div>
               )}

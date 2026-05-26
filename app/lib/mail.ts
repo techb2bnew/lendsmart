@@ -89,17 +89,8 @@ async function sendWithResend(params: {
     } catch {
       if (errText) msg = errText.slice(0, 300);
     }
-    throw new Error(msg);
+    // throw new Error(msg);
   }
-}
-
-function isResendDomainRestriction(message: string): boolean {
-  const lower = message.toLowerCase();
-  return (
-    lower.includes("verify a domain") ||
-    lower.includes("only send testing emails") ||
-    lower.includes("resend.dev")
-  );
 }
 
 export function mailNotConfiguredResponse(context: string): NextResponse {
@@ -190,17 +181,6 @@ export function mailErrorResponse(
           "Microsoft 365 has Authenticated SMTP turned off for this mailbox. Enable SMTP AUTH or use Resend.",
       },
       { status: 500 }
-    );
-  }
-
-  if (isResendDomainRestriction(raw)) {
-    return NextResponse.json(
-      {
-        success: false,
-        message:
-          "Resend test mode: verify your domain at resend.com/domains and set RESEND_FROM to an address on that domain.",
-      },
-      { status: 503 }
     );
   }
 

@@ -76,7 +76,7 @@ export function emailShell(params: {
       <td align="center" style="padding:32px 16px;">
         <table role="presentation" class="wrapper" width="600" cellpadding="0" cellspacing="0" style="max-width:600px;width:100%;">
           <tr>
-            <td style="background:linear-gradient(135deg,${BRAND.green} 0%,${BRAND.greenLight} 100%);background-color:${BRAND.green};border-radius:12px 12px 0 0;padding:28px 32px;text-align:center;">
+            <td style="background-color:#ebebeb;border-radius:12px 12px 0 0;padding:28px 32px;text-align:center;">
               <a href="${params.siteUrl}" style="text-decoration:none;">
                 <img src="${logoUrl}" alt="LendSmart Mortgages" width="200" style="display:block;margin:0 auto;max-width:200px;height:auto;border:0;" />
               </a>

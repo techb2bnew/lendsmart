@@ -41,7 +41,7 @@ export default function RootLayout({
         <main className="">{children}
           {/* Floating WhatsApp — safe-area for iPhone home indicator / notch */}
           <a
-            href="https://wa.me/0413 206 624"
+            href="https://wa.me/+61 413 206 624"
             target="_blank"
             rel="noopener noreferrer"
             className="fixed z-50 flex h-14 w-14 min-h-[48px] min-w-[48px] items-center justify-center rounded-full shadow-2xl transition-transform hover:scale-110 right-[max(1.5rem,env(safe-area-inset-right,0px))] bottom-[max(1.5rem,env(safe-area-inset-bottom,0px))]"

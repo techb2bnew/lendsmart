@@ -78,7 +78,7 @@ export default function PersonalLoansPage() {
         callText="Call Now"
         callLink="tel:0413 206 624"
         chatText="Chat With Us"
-        chatLink="https://wa.me/0413 206 624"
+        chatLink="https://wa.me/+61 413 206 624"
       />
 
       <div className="bg-[#f4f5f4] py-6 sm:py-8 lg:py-10">
@@ -127,7 +127,7 @@ export default function PersonalLoansPage() {
         description="Choosing the right loan can be complicated. At LendSmart Mortgages, we simplify the process and help you make informed decisions."
         steps={personalLoanProcessSteps}
         buttonText="Chat With Us"
-        buttonLink="https://wa.me/0413 206 624"
+        buttonLink="https://wa.me/+61 413 206 624"
       />
 
       {/* <ServiceStatsBar

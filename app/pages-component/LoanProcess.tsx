@@ -56,7 +56,7 @@ export default function LoanProcess({
   breakText,
   description,
   buttonText,
-  buttonLink = "https://wa.me/0413 206 624",
+  buttonLink = "https://wa.me/+61 413 206 624",
   steps = defaultSteps,
 }: LoanProcessProps) {
   return (

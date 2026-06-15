@@ -91,8 +91,8 @@ const Annocementbar = () => {
 
           <div className="flex shrink-0 items-center gap-3 sm:gap-4">
             <Link href="#" aria-label="LinkedIn" className="hover:opacity-70">{LinkedInIcon}</Link>
-            <Link href="#" aria-label="Facebook" className="hover:opacity-70">{FacebookIcon}</Link>
-            <Link href="#" aria-label="Instagram" className="hover:opacity-70">{InstagramIcon}</Link>
+            <Link target="_blank" href="https://www.facebook.com/profile.php?id=61590849864808" aria-label="Facebook" className="hover:opacity-70">{FacebookIcon}</Link>
+            <Link target="_blank" href="https://www.instagram.com/lendsmart_mortgages" aria-label="Instagram" className="hover:opacity-70">{InstagramIcon}</Link>
             <Link href="#" aria-label="YouTube" className="hover:opacity-70">{YouTubeIcon}</Link>
           </div>
         </div>

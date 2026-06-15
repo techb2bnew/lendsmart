@@ -94,7 +94,7 @@ export default function ConstructionLoansPage() {
         callText="Call Now"
         callLink="tel:0413 206 624"
         chatText="Chat With Us"
-        chatLink="https://wa.me/+61 413 206 624"
+        chatLink="https://wa.me/61413206624"
       />
 
       <div className="py-6 sm:py-8 lg:py-10">
@@ -125,7 +125,7 @@ export default function ConstructionLoansPage() {
         subtitle="There are so many Loan & financing options"
         solutions={constructionOptions}
         chatButtonText="chat with us"
-        chatButtonLink="https://wa.me/+61 413 206 624"
+        chatButtonLink="https://wa.me/61413206624"
         rightImage="/service/construction-work.png"
         rightImageClassName="object-cover object-center"
       />
@@ -160,7 +160,7 @@ export default function ConstructionLoansPage() {
         description="Choosing the right loan can be complicated. At LendSmart Mortgages, we simplify the process and help you make informed decisions."
         steps={constructionLoanSteps}
         buttonText="Chat With Us"
-        buttonLink="https://wa.me/+61 413 206 624"
+        buttonLink="https://wa.me/61413206624"
       />
 
       {/* <ServiceStatsBar

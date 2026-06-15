@@ -85,7 +85,7 @@ export default function CarTruckLoansPage() {
         callText="Call Now"
         callLink="tel:0413 206 624"
         chatText="Chat With Us"
-        chatLink="https://wa.me/+61 413 206 624"
+        chatLink="https://wa.me/61413206624"
       />
 
       <div className=" py-6 sm:py-8 lg:py-10">
@@ -116,7 +116,7 @@ export default function CarTruckLoansPage() {
           subtitle="There are so many Loan & financing options"
           solutions={financeOptions}
           chatButtonText="chat with us"
-          chatButtonLink="https://wa.me/+61 413 206 624"
+          chatButtonLink="https://wa.me/61413206624"
           rightImage="/service/finance.png"
           rightImageClassName="object-contain object-center"
         /> 
@@ -151,7 +151,7 @@ export default function CarTruckLoansPage() {
         description="Choosing the right loan can be complicated. At LendSmart Mortgages, we simplify the process and help you make informed decisions."
         steps={carTruckLoanSteps}
         buttonText="Chat With Us"
-        buttonLink="https://wa.me/+61 413 206 624"
+        buttonLink="https://wa.me/61413206624"
       />
 
       {/* <ServiceStatsBar

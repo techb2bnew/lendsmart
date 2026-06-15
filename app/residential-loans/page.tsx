@@ -92,7 +92,7 @@ export default function ResidentialLoansPage() {
         callText="Call Now"
         callLink="tel:0413 206 624"
         chatText="Chat With Us"
-        chatLink="https://wa.me/+61 413 206 624"
+        chatLink="https://wa.me/61413206624"
       />
 
       <AboutService
@@ -126,7 +126,7 @@ export default function ResidentialLoansPage() {
           description="Buying your dream home doesn't have to be complicated. We guide you at every step with expert advice, multiple lender options, and fast approvals."
           steps={residentialLoanProcessSteps}
           buttonText="Chat with us"
-          buttonLink="https://wa.me/+61 413 206 624"
+          buttonLink="https://wa.me/61413206624"
         />
   {/* <div className="bg-[#EEF4E4]"> 
       <ServiceStatsBar

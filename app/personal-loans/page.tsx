@@ -8,11 +8,12 @@ import ServiceStatsBar from "../service/ServiceStatsBar";
 import Testimonials from "../pages-component/Testimonials";
 import PersonalLoanBenefits from "../service/PersonalLoanBenefits";
 import type { Metadata } from "next";
-export const metadata: Metadata = {
-  title: "Personal Loans Australia | Fast & Flexible Finance",
-  description:
-    "Get quick personal loans with flexible repayment options. LendSmart helps you fund your needs with fast approval and low interest rates.",
-};
+import { pageMetadata } from "../lib/site";
+export const metadata: Metadata = pageMetadata(
+  "Personal Loans Australia | Fast & Flexible Finance",
+  "Get quick personal loans with flexible repayment options. LendSmart helps you fund your needs with fast approval and low interest rates.",
+  "/personal-loans"
+);
 const personalUseItems = [
   { imageSrc: "/service/per-loan.png", title: "Travel and holidays", alt: "Travel and holidays" },
   { imageSrc: "/service/per-loan1.png", title: "Medical expenses", alt: "Medical expenses" },

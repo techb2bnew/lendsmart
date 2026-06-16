@@ -8,11 +8,12 @@ import type { LoanProcessStep } from "../pages-component/LoanProcess";
 import ServiceStatsBar from "../service/ServiceStatsBar";
 import Testimonials from "../pages-component/Testimonials";
 import type { Metadata } from "next";
-export const metadata: Metadata = {
-  title: "Construction Loans Australia | Build with Confidence",
-  description:
-    "Build your dream property with flexible construction loans. LendSmart provides staged funding and expert support from start to finish.",
-};
+import { pageMetadata } from "../lib/site";
+export const metadata: Metadata = pageMetadata(
+  "Construction Loans Australia | Build with Confidence",
+  "Build your dream property with flexible construction loans. LendSmart provides staged funding and expert support from start to finish.",
+  "/construction-loans"
+);
 const constructionOptions = [
   {
     id: "fund-released",

@@ -8,11 +8,12 @@ import LoanProcess from "../pages-component/LoanProcess";
 import Testimonials from "../pages-component/Testimonials";
 import WhyChoose from "../pages-component/WhyChoose";
 import type { Metadata } from "next";
-export const metadata: Metadata = {
-  title: "About LendSmart | Trusted Mortgage Experts",
-  description:
-    "Learn about LendSmart mission to simplify lending. We help individuals & businesses secure the right loans with expert financial guidance.",
-};
+import { pageMetadata } from "../lib/site";
+export const metadata: Metadata = pageMetadata(
+  "About LendSmart | Trusted Mortgage Experts",
+  "Learn about LendSmart mission to simplify lending. We help individuals & businesses secure the right loans with expert financial guidance.",
+  "/about-us"
+);
 export default function AboutUsPage() {
   return (
     <>

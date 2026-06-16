@@ -8,11 +8,12 @@ import Stats from "./pages-component/Stats";
 import Testimonials from "./pages-component/Testimonials";
 import WhyChoose from "./pages-component/WhyChoose";
 import type { Metadata } from "next";
-export const metadata: Metadata = {
-  title: "LendSmart Mortgages | Smart Loan Solutions in Australia",
-  description:
-    "Get fast, reliable loan solutions with LendSmart. Home, personal, business & car loans tailored to your needs. Apply today for quick approvals.",
-};
+import { pageMetadata } from "./lib/site";
+export const metadata: Metadata = pageMetadata(
+  "LendSmart Mortgages | Smart Loan Solutions in Australia",
+  "Get fast, reliable loan solutions with LendSmart. Home, personal, business & car loans tailored to your needs. Apply today for quick approvals.",
+  "/"
+);
 export default function Home() {
   return (
     <>

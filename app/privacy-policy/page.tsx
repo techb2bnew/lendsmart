@@ -1,11 +1,12 @@
 import React from "react";
 import type { Metadata } from "next";
+import { pageMetadata } from "../lib/site";
 
-export const metadata: Metadata = {
-  title: "Privacy Policy | LendSmart Mortgages Australia",
-  description:
-    "Learn how LendSmart Mortgages collects, uses, and protects your personal information in accordance with Australian privacy laws and lending regulations.",
-};
+export const metadata: Metadata = pageMetadata(
+  "Privacy Policy | LendSmart Mortgages Australia",
+  "Learn how LendSmart Mortgages collects, uses, and protects your personal information in accordance with Australian privacy laws and lending regulations.",
+  "/privacy-policy"
+);
 
 export default function PrivacyPolicy() {
   return (

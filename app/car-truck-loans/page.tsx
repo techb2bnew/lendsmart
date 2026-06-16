@@ -8,11 +8,12 @@ import type { LoanProcessStep } from "../pages-component/LoanProcess";
 import ServiceStatsBar from "../service/ServiceStatsBar";
 import Testimonials from "../pages-component/Testimonials";
 import type { Metadata } from "next";
-export const metadata: Metadata = {
-  title: "Car & Truck Loans Australia | Easy Vehicle Finance",
-  description:
-    "Finance your car or truck with ease. LendSmart offers low-rate vehicle loans with quick approvals and flexible repayment options.",
-};
+import { pageMetadata } from "../lib/site";
+export const metadata: Metadata = pageMetadata(
+  "Car & Truck Loans Australia | Easy Vehicle Finance",
+  "Finance your car or truck with ease. LendSmart offers low-rate vehicle loans with quick approvals and flexible repayment options.",
+  "/car-truck-loans"
+);
 const financeOptions = [
   {
     id: "car-loans",

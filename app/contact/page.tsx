@@ -4,11 +4,12 @@ import MainSection from "../pages-component/MainSection";
 import SpeakWithExpertSection from "../pages-component/SpeakWithExpertSection";
 import Testimonials from "../pages-component/Testimonials";
 import type { Metadata } from "next";
-export const metadata: Metadata = {
-  title: "Contact LendSmart | Speak to Loan Experts",
-  description:
-    "Need help with loans? Contact LendSmart today and speak with our experts for quick support, guidance, and personalized loan solutions.",
-};
+import { pageMetadata } from "../lib/site";
+export const metadata: Metadata = pageMetadata(
+  "Contact LendSmart | Speak to Loan Experts",
+  "Need help with loans? Contact LendSmart today and speak with our experts for quick support, guidance, and personalized loan solutions.",
+  "/contact"
+);
 export default function ContactPage() {
   return (
     <>

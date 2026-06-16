@@ -7,11 +7,12 @@ import HelpSection from "../service/HelpSection";
 import ServiceStatsBar from "../service/ServiceStatsBar";
 import Link from "next/link";
 import type { Metadata } from "next";
-export const metadata: Metadata = {
-  title: "Home Loans in Australia | LendSmart Mortgages",
-  description:
-    "Looking for a home loan? Get competitive rates, flexible options & expert guidance with LendSmart. Start your home buying journey today.",
-};
+import { pageMetadata } from "../lib/site";
+export const metadata: Metadata = pageMetadata(
+  "Home Loans in Australia | LendSmart Mortgages",
+  "Looking for a home loan? Get competitive rates, flexible options & expert guidance with LendSmart. Start your home buying journey today.",
+  "/residential-loans"
+);
 const helpItems = [
   { imageSrc: "/service/help.png", title: "First home buyer loans", alt: "First home buyer loans" },
   { imageSrc: "/service/help2.png", title: "Debt consolidation loans", alt: "Debt consolidation loans" },

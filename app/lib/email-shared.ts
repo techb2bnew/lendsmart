@@ -19,13 +19,7 @@ export function escapeHtml(text: string): string {
     .replace(/'/g, "&#39;");
 }
 
-export function getSiteBaseUrl(): string {
-  const url =
-    process.env.NEXT_PUBLIC_SITE_URL?.trim() ||
-    process.env.SITE_URL?.trim() ||
-    "https://lendsmartmortgages.com.au";
-  return url.replace(/\/$/, "");
-}
+export { getSiteBaseUrl } from "./site";
 
 export function formatTimestamp(): string {
   return new Date().toLocaleString("en-AU", {

@@ -8,11 +8,12 @@ import type { LoanProcessStep } from "../pages-component/LoanProcess";
 import ServiceStatsBar from "../service/ServiceStatsBar";
 import Testimonials from "../pages-component/Testimonials";
 import type { Metadata } from "next";
-export const metadata: Metadata = {
-  title: "Asset Finance Australia | Equipment & Business Loans",
-  description:
-    "Upgrade your business with asset finance solutions. Get funding for equipment, machinery & tools with LendSmart’s flexible plans.",
-};
+import { pageMetadata } from "../lib/site";
+export const metadata: Metadata = pageMetadata(
+  "Asset Finance Australia | Equipment & Business Loans",
+  "Upgrade your business with asset finance solutions. Get funding for equipment, machinery & tools with LendSmart’s flexible plans.",
+  "/asset-finance"
+);
 const assetFinanceOptions = [
   {
     id: "expert-guidance",

@@ -9,11 +9,12 @@ import ServiceStatsBar from "../service/ServiceStatsBar";
 import Testimonials from "../pages-component/Testimonials";
 import HowWeCanHelpYou from "../service/HowWeCanHelpYou";
 import type { Metadata } from "next";
-export const metadata: Metadata = {
-  title: "Commercial Loans Australia | Business Finance",
-  description:
-    "Grow your business with flexible commercial loans. LendSmart offers tailored financing solutions for expansion, cash flow & investments.",
-};
+import { pageMetadata } from "../lib/site";
+export const metadata: Metadata = pageMetadata(
+  "Commercial Loans Australia | Business Finance",
+  "Grow your business with flexible commercial loans. LendSmart offers tailored financing solutions for expansion, cash flow & investments.",
+  "/commercial-loans"
+);
 const helpItems = [
   {
     icon: "/service/c-icon.png",

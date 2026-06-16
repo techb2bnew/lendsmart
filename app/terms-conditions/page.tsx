@@ -1,11 +1,12 @@
 import React from "react";
 import type { Metadata } from "next";
+import { pageMetadata } from "../lib/site";
 
-export const metadata: Metadata = {
-  title: "Terms & Conditions | LendSmart Mortgages Website Use",
-  description:
-    "Read the terms and conditions governing the use of the LendSmart Mortgages website, services, loan enquiries, and electronic communications.",
-};
+export const metadata: Metadata = pageMetadata(
+  "Terms & Conditions | LendSmart Mortgages Website Use",
+  "Read the terms and conditions governing the use of the LendSmart Mortgages website, services, loan enquiries, and electronic communications.",
+  "/terms-conditions"
+);
 
 export default function TermsConditions() {
   return (

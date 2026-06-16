@@ -1,5 +1,6 @@
 import type { Metadata, Viewport } from "next";
 import { Poppins } from "next/font/google";
+import { siteMetadataBase } from "./lib/site";
 import "./globals.css";
 import Header from "./header-footer-component/Header";
 import Footer from "./header-footer-component/Footer";
@@ -22,9 +23,13 @@ const poppins = Poppins({
 
 
 export const metadata: Metadata = {
+  metadataBase: siteMetadataBase,
   title: "LendSmart Mortgages | Smart Loan Solutions in Australia",
   description:
     "Get fast, reliable loan solutions with LendSmart. Home, personal, business & car loans tailored to your needs. Apply today for quick approvals.",
+  alternates: {
+    canonical: "/",
+  },
 };
 
 export default function RootLayout({

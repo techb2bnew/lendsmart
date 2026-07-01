@@ -8,7 +8,7 @@ import Annocementbar from "./header-footer-component/Annocementbar";
 
 import AOSInit from '@/app/components/AOSInit';
 import CTABanner from "./pages-component/CTABanner";
-
+import Script from "next/script";
 export const viewport: Viewport = {
   width: "device-width",
   initialScale: 1,
@@ -30,6 +30,9 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "/",
   },
+  verification: {
+    google: "mNdg4uBx8i56EjiRhf_zSV9K1I49Eq5ugfx3wgnU8ok",
+  },
 };
 
 export default function RootLayout({
@@ -40,6 +43,18 @@ export default function RootLayout({
   return (
     <html lang="en" className={poppins.variable}>
       <body style={{ fontFamily: "var(--font-poppins), sans-serif" }}>
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-VY37N54D13"
+          strategy="afterInteractive"
+        />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-VY37N54D13');
+          `}
+        </Script>
         <Annocementbar />
         <Header />
         <AOSInit />

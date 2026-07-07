@@ -17,13 +17,13 @@ const services = [
   { label: "Residential Home Loans", href: "/residential-loans" },
   { label: "Commercial Loans", href: "/commercial-loans" },
   { label: "Personal Loans", href: "/personal-loans" },
-  { label: "Car & Truck Loans", href: "/car-truck-loans" }, 
+  { label: "Car & Truck Loans", href: "/car-truck-loans" },
   { label: "Asset Finance", href: "/asset-finance" },
   { label: "Construction Loans", href: "/construction-loans" },
 ];
 const company = [
   { label: "Terms & Conditions", href: "/terms-conditions" },
-  { label: "Privacy Policy", href: "/privacy-policy" }, 
+  { label: "Privacy Policy", href: "/privacy-policy" },
 ];
 
 const accordionIds = {
@@ -35,10 +35,10 @@ const accordionIds = {
 
 type AccordionId = (typeof accordionIds)[keyof typeof accordionIds];
 
-const arrowDrp =((
-    <svg xmlns="http://www.w3.org/2000/svg" width={22} height={22} viewBox="0 0 24 24" fill="none" stroke="currentColor"strokeWidth={2} strokeLinecap="round"strokeLinejoin="round" className="lucide lucide-chevron-down shrink-0 text-[#333] transition-transform duration-200"aria-hidden="true">
-        <path d="m6 9 6 6 6-6" />
-    </svg>
+const arrowDrp = ((
+  <svg xmlns="http://www.w3.org/2000/svg" width={22} height={22} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-chevron-down shrink-0 text-[#333] transition-transform duration-200" aria-hidden="true">
+    <path d="m6 9 6 6 6-6" />
+  </svg>
 ));
 
 function FooterAccordionSection({
@@ -63,7 +63,7 @@ function FooterAccordionSection({
         aria-controls={`footer-panel-${id}`}
         onClick={() => onToggle(id)}>
         <span className="text-[15px] font-semibold text-black">{title}</span>
-      
+
         <span className={`${isOpen ? "rotate-180" : ""}`}>{arrowDrp}</span>
       </button>
 
@@ -90,7 +90,7 @@ export default function Footer() {
 
   return (
     <footer className="overflow-hidden bg-[#F4FBE9]">
-        <Newsletter />
+      <Newsletter />
 
       {/* Main footer */}
       <div className="relative px-4 lg:px-0 pb-8 pt-10 lg:pb-10 lg:pt-12">
@@ -111,7 +111,7 @@ export default function Footer() {
               </div>
 
               <p className="mt-4 text-[15px] leading-7 text-[#444]">
-               At LendSmart Mortgages, we believe securing finance should be clear, strategic, and stress-free. Whether you are purchasing your first home, refinancing, investing, or growing your business, we help you make informed financial decisions with confidence.
+                At LendSmart Mortgages, we believe securing finance should be clear, strategic, and stress-free. Whether you are purchasing your first home, refinancing, investing, or growing your business, we help you make informed financial decisions with confidence.
               </p>
 
               <SocialLinks className="mt-6 flex items-center gap-5 text-black" />
@@ -223,7 +223,7 @@ export default function Footer() {
           </div>
         </div>
       </div>
-      
+
     </footer>
   );
 }

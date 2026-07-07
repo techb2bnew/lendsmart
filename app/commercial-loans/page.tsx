@@ -126,28 +126,28 @@ export default function CommercialLoansPage() {
         chatLink="https://wa.me/61413206624"
       />
 
-      <HowWeCanHelpYou imageSrc="/service/commercial-help.png" items={helpItems} />
-<div className="bg-[#EEF4E4] pb-6 sm:pb-8 lg:pb-10">
-      <AboutService
-        title="About Commercial Loans"
-        description1="Commercial loans are more complex than residential loans. At LendSmart Mortgages, we help business owners find suitable loan solutions based on their financial goals."
-        description2="We assist with structuring loans that support long-term business growth."
-        ourGoalHeading="Our goal is to provide"
-        ourGoalDescription="smart, transparent, and growth-focused finance support."
-        collageImageSrc="/service/c-about.png"
-        collageImageAlt="Commercial finance solutions"
-        stat1={{ value: 78, suffix: "%", label: "Business from Referrals" }}
-        stat2={{ value: 45, suffix: "+", label: "Minute Verbal Commitment" }}
-        clientCount={8665}
-        clientCountLabel="Popular Clients"
-        clientImages={[
-          "1507003211169-0a1dd7228f2d",
-          "1494790108377-be9c29b29330",
-          "1472099645785-5658abf4ff4e",
-        ]}
-        ctaText="Know More About Us"
-        ctaLink="/about-us"
-      />
+      <HowWeCanHelpYou imageSrc="/service/commercial-helpv2.png" items={helpItems} />
+      <div className="bg-[#EEF4E4] pb-6 sm:pb-8 lg:pb-10">
+        <AboutService
+          title="About Commercial Loans"
+          description1="Commercial loans are more complex than residential loans. At LendSmart Mortgages, we help business owners find suitable loan solutions based on their financial goals."
+          description2="We assist with structuring loans that support long-term business growth."
+          ourGoalHeading="Our goal is to provide"
+          ourGoalDescription="smart, transparent, and growth-focused finance support."
+          collageImageSrc="/service/c-about.png"
+          collageImageAlt="Commercial finance solutions"
+          stat1={{ value: 78, suffix: "%", label: "Business from Referrals" }}
+          stat2={{ value: 45, suffix: "+", label: "Minute Verbal Commitment" }}
+          clientCount={8665}
+          clientCountLabel="Popular Clients"
+          clientImages={[
+            "1507003211169-0a1dd7228f2d",
+            "1494790108377-be9c29b29330",
+            "1472099645785-5658abf4ff4e",
+          ]}
+          ctaText="Know More About Us"
+          ctaLink="/about-us"
+        />
       </div>
 
       <div className="-mt-10">
@@ -162,29 +162,29 @@ export default function CommercialLoansPage() {
           bottomRightImage="/service/help.png"
         />
       </div>
-        <div className="relative top-[-48px] sm:top-[-80px]">
-      <div className="relative overflow-hidden bg-[#EEF4E4] px-4 lg:px-10 pt-14 sm:pt-16 lg:pt-20">
-        <LoanSupport
-          highlightText="Benefits"
-          normalText="of Commercial"
-          breakText="Loans"
-          description="Most people find that mortgage financing is complicated and confusing. We help you buy your dream home by simplifying the mortgage financing process with personalized loan options that save you time and money."
-          supportItems={[
-            { icon: "/home.png", label: "Tailored business loan solutions" },
-            { icon: "/signing.png", label: "Access to multiple lenders" },
-            { icon: "/assets.png", label: "Expert loan structuring" },
-            { icon: "/agreement.png", label: "Smooth approval process" },
-          ]}
-          bottomContent={{
-            blueText: "",
-            greenText: "",
-            description: "Let's discuss your business finance needs.",
-          }}
-          imageSrc="/family.png"
-          imageAlt="Family discussing finance options"
-          supportCardBgClassName="bg-white"
-        />
-      </div>
+      <div className="relative top-[-48px] sm:top-[-80px]">
+        <div className="relative overflow-hidden bg-[#EEF4E4] px-4 lg:px-10 pt-14 sm:pt-16 lg:pt-20">
+          <LoanSupport
+            highlightText="Benefits"
+            normalText="of Commercial"
+            breakText="Loans"
+            description="Most people find that mortgage financing is complicated and confusing. We help you buy your dream home by simplifying the mortgage financing process with personalized loan options that save you time and money."
+            supportItems={[
+              { icon: "/home.png", label: "Tailored business loan solutions" },
+              { icon: "/signing.png", label: "Access to multiple lenders" },
+              { icon: "/assets.png", label: "Expert loan structuring" },
+              { icon: "/agreement.png", label: "Smooth approval process" },
+            ]}
+            bottomContent={{
+              blueText: "",
+              greenText: "",
+              description: "Let's discuss your business finance needs.",
+            }}
+            imageSrc="/family.png"
+            imageAlt="Family discussing finance options"
+            supportCardBgClassName="bg-white"
+          />
+        </div>
       </div>
 
       <LoanProcess
@@ -213,7 +213,7 @@ export default function CommercialLoansPage() {
         ]}
       /> */}
 
-<Testimonials
+      <Testimonials
         title="Testimonials"
         description="Clients trust LendSmart Mortgages for reliable loan guidance and support."
         reviews={[

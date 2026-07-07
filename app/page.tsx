@@ -23,7 +23,7 @@ export default function Home() {
         description2="We work with a wide network of lenders to help you find loan options that suit your financial goals. Whether you are purchasing a home, financing a vehicle, or expanding your business, we guide you through the entire loan process."
         gaolHeading="Our goal is to make borrowing"
         gaolDescription=" simple, transparent, and stress-free."
-        imageSrc="/land-smart.png"
+        imageSrc="/land-smart-v2.png"
       />
       <LoanServices
         title="Our Loan Services"
@@ -63,7 +63,7 @@ export default function Home() {
             time: "3 Days ago",
             image: "/user-t.jpg",
           },
-           {
+          {
             heading: "",
             description:
               "Best mortgage experience we've ever had. Quick communication and great loan options.",

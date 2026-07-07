@@ -13,7 +13,7 @@ export default function SocialLinks({ className = "" }: { className?: string }) 
           <path d="M18.9 2H22l-6.8 7.8L23 22h-6.2l-4.9-6.4L6.3 22H3.1l7.3-8.4L1 2h6.3l4.4 5.8L18.9 2Zm-1.1 18h1.7L6.2 3.9H4.4L17.8 20Z" />
         </svg>
       </a>
-      <a href="#" aria-label="LinkedIn" className={linkClass}>
+      <a target="_blank" href="https://www.linkedin.com/in/bharat-kainth-mortgage-broker/" aria-label="LinkedIn" className={linkClass}>
         <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden>
           <path d="M6.94 8.5H3.56V20h3.38V8.5ZM5.25 7.03A1.97 1.97 0 1 0 5.25 3.1a1.97 1.97 0 0 0 0 3.94ZM20.44 20h-3.37v-5.58c0-1.33-.03-3.04-1.85-3.04-1.85 0-2.13 1.45-2.13 2.94V20H9.7V8.5h3.24v1.57h.05c.45-.86 1.56-1.77 3.2-1.77 3.42 0 4.05 2.25 4.05 5.18V20Z" />
         </svg>

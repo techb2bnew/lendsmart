@@ -38,21 +38,20 @@ export default function WhyChoose({
   benefits = defaultBenefits,
   chatButtonText = "Chat With Us",
   chatButtonLink = "https://wa.me/61413206624",
-  personImage = "/about.png",
+  personImage = "/land-smart-v2.png",
   personImageAlt = "LendSmart advisor",
   handImage = "/hand-holding.png",
   hideHandImage = false,
 }: WhyChooseProps) {
   return (
     <section
-      className={`relative overflow-hidden bg-[#EEF4E4] px-4 lg:px-10 ${
-        removeTopOffset
-          ? "pt-14 sm:pt-16 lg:pt-20"
-          : "top-[-48px] pt-20 sm:top-[-80px] sm:pt-28 lg:top-[-80px] lg:pt-28"
-      }`}
+      className={`relative overflow-hidden bg-[#EEF4E4] px-4 lg:px-10 ${removeTopOffset
+        ? "pt-14 sm:pt-16 lg:pt-20"
+        : "top-[-48px] pt-20 sm:top-[-80px] sm:pt-28 lg:top-[-80px] lg:pt-28"
+        }`}
     >
       <div className="max-w-[1440px] mx-auto">
-        <div className="grid grid-cols-1 items-end gap-10 md:gap-5 lg:grid-cols-[1.05fr_0.95fr] ">
+        <div className="grid grid-cols-1 items-end gap-10 md:gap-5 lg:grid-cols-[1.05fr_0.95fr] pt-5 md:pt-10">
           {/* Left content */}
           <div className="relative lg:pt-6 pb-0 md:pb-20">
             <div className="mt-5 lg:mt-4 ">

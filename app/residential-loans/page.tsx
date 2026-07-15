@@ -9,8 +9,8 @@ import Link from "next/link";
 import type { Metadata } from "next";
 import { pageMetadata } from "../lib/site";
 export const metadata: Metadata = pageMetadata(
-  "Home Loans in Australia | LendSmart Mortgages",
-  "Looking for a home loan? Get competitive rates, flexible options & expert guidance with LendSmart. Start your home buying journey today.",
+  "Residential Home Loan Broker Adelaide | LendSmart Mortgages",
+  "LendSmart is a trusted residential home loan broker in Adelaide, helping you secure competitive home loans, refinance options and investment property finance. ",
   "/residential-loans"
 );
 const helpItems = [
@@ -107,7 +107,7 @@ export default function ResidentialLoansPage() {
         stat1={{ value: 250, prefix: "$", suffix: "", label: "Business from Referrals" }}
         stat2={{ value: 45, suffix: "+", label: "Minute Verbal Commitment" }}
         clientCount={8685}
-        clientCountLabel="Popular Clients"  
+        clientCountLabel="Popular Clients"
         clientImages={[
           "1507003211169-0a1dd7228f2d",
           "1494790108377-be9c29b29330",
@@ -119,17 +119,17 @@ export default function ResidentialLoansPage() {
 
       <HelpSection items={helpItems} />
 
-    
-        <LoanProcess
-          normalText="How Our"
-          highlightText="Loan Process"
-          breakText="Works"
-          description="Buying your dream home doesn't have to be complicated. We guide you at every step with expert advice, multiple lender options, and fast approvals."
-          steps={residentialLoanProcessSteps}
-          buttonText="Chat with us"
-          buttonLink="https://wa.me/61413206624"
-        />
-  {/* <div className="bg-[#EEF4E4]"> 
+
+      <LoanProcess
+        normalText="How Our"
+        highlightText="Loan Process"
+        breakText="Works"
+        description="Buying your dream home doesn't have to be complicated. We guide you at every step with expert advice, multiple lender options, and fast approvals."
+        steps={residentialLoanProcessSteps}
+        buttonText="Chat with us"
+        buttonLink="https://wa.me/61413206624"
+      />
+      {/* <div className="bg-[#EEF4E4]"> 
       <ServiceStatsBar
         items={[
           { kind: "count", prefix: "$", value: 250, suffix: "M+", label: "in loans settled" },
@@ -163,7 +163,7 @@ export default function ResidentialLoansPage() {
           {
             heading: "",
             description:
-            "We were worried about getting our home loan approved on time, but the team made it happen quicker than expected. They handled everything from lender comparison to documentation with complete professionalism.",
+              "We were worried about getting our home loan approved on time, but the team made it happen quicker than expected. They handled everything from lender comparison to documentation with complete professionalism.",
             name: "Jason K.",
             time: "3 Days ago",
             image: "/user-t.jpg",

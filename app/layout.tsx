@@ -24,9 +24,9 @@ const poppins = Poppins({
 
 export const metadata: Metadata = {
   metadataBase: siteMetadataBase,
-  title: "LendSmart Mortgages | Smart Loan Solutions in Australia",
+  title: "Best Mortgage Broker in Adelaide | Lend Smart Home & Business Loans",
   description:
-    "Get fast, reliable loan solutions with LendSmart. Home, personal, business & car loans tailored to your needs. Apply today for quick approvals.",
+    "Looking for the best mortgage broker in Adelaide? LendSmart offers home loans, commercial loans, personal loans, car & truck finance, construction loans and more.",
   alternates: {
     canonical: "/",
   },

@@ -10,8 +10,8 @@ import WhyChoose from "../pages-component/WhyChoose";
 import type { Metadata } from "next";
 import { pageMetadata } from "../lib/site";
 export const metadata: Metadata = pageMetadata(
-  "About LendSmart | Trusted Mortgage Experts",
-  "Learn about LendSmart mission to simplify lending. We help individuals & businesses secure the right loans with expert financial guidance.",
+  "About LendSmart | Trusted Mortgage Broker in Adelaide",
+  "Get to know LendSmart, your trusted mortgage and finance broker in Adelaide. Our experienced team delivers personalised loan solutions with expert guidance.",
   "/about-us"
 );
 export default function AboutUsPage() {
@@ -26,7 +26,7 @@ export default function AboutUsPage() {
         chatText="Chat With Us"
       />
 
-      <div className="bg-[#EEF4E4] py-6 sm:py-8 lg:py-10"> 
+      <div className="bg-[#EEF4E4] py-6 sm:py-8 lg:py-10">
         <LoanSupport
           highlightText=""
           normalText="Our Philosophy"
@@ -48,8 +48,8 @@ export default function AboutUsPage() {
           showActions
           chatButtonText="Chat With Us"
         />
-        </div>
-        <div className="-mt-10">
+      </div>
+      <div className="-mt-10">
         <LendingSolutions
           title="Lending Solutions We Provide"
           subtitle="We assist individuals and businesses with:"
@@ -88,8 +88,8 @@ export default function AboutUsPage() {
           chatButtonText="chat with us"
           rightImage="/about/assest.png"
         />
-        </div>
-        <div className="relative top-[-48px] sm:top-[-80px]">
+      </div>
+      <div className="relative top-[-48px] sm:top-[-80px]">
         <WhyChoose
           showActions
           removeTopOffset
@@ -109,34 +109,34 @@ export default function AboutUsPage() {
           chatButtonText="Chat With Us"
           hideHandImage
         />
-        </div>
+      </div>
       <AboutAccessSection />
       <div className="bg-[#EEF4E4]">
-      <LoanProcess
-        normalText="How Our"
-        highlightText="Loan Process"
-        breakText="Works"
-        description="Choosing the right loan can be complicated. At LendSmart Mortgages, we simplify the process and help you make informed decisions."
-        buttonText="Chat With Us"
-        buttonLink="https://wa.me/61413206624"
-      />
+        <LoanProcess
+          normalText="How Our"
+          highlightText="Loan Process"
+          breakText="Works"
+          description="Choosing the right loan can be complicated. At LendSmart Mortgages, we simplify the process and help you make informed decisions."
+          buttonText="Chat With Us"
+          buttonLink="https://wa.me/61413206624"
+        />
       </div>
       <AboutCommitmentSection />
-      <AboutStatsSection /> 
-       <Testimonials
+      <AboutStatsSection />
+      <Testimonials
         title="Testimonials"
         description="Clients trust LendSmart Mortgages for reliable loan guidance and support."
         reviews={[
           {
             heading: "",
-            description:"From the very first interaction, the team was professional, responsive, and genuinely helpful. They took the time to understand our needs and provided clear, honest advice throughout the process. It is rare to find such reliable and client-focused service.",
+            description: "From the very first interaction, the team was professional, responsive, and genuinely helpful. They took the time to understand our needs and provided clear, honest advice throughout the process. It is rare to find such reliable and client-focused service.",
             name: "Michael Anderson",
             time: "3 Days ago",
             image: "/user.png",
           },
           {
             heading: "",
-            description:"We had a great experience working with them. Their communication was excellent, and they made everything simple to understand. The entire process was smooth, transparent, and well-managed from start to finish.",
+            description: "We had a great experience working with them. Their communication was excellent, and they made everything simple to understand. The entire process was smooth, transparent, and well-managed from start to finish.",
             name: "Jason K.",
             time: "3 Days ago",
             image: "/user-t.jpg",

@@ -3,8 +3,8 @@ import type { Metadata } from "next";
 import { pageMetadata } from "../lib/site";
 
 export const metadata: Metadata = pageMetadata(
-  "Privacy Policy | LendSmart Mortgages Australia",
-  "Learn how LendSmart Mortgages collects, uses, and protects your personal information in accordance with Australian privacy laws and lending regulations.",
+  "LendSmart Privacy Policy & Data Protection | Mortgage Broker",
+  "Review LendSmart's Privacy Policy for information on how we collect, use and safe guard your personal information, cookies, website security and privacy rights.",
   "/privacy-policy"
 );
 

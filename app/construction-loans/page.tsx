@@ -10,8 +10,8 @@ import Testimonials from "../pages-component/Testimonials";
 import type { Metadata } from "next";
 import { pageMetadata } from "../lib/site";
 export const metadata: Metadata = pageMetadata(
-  "Construction Loans Australia | Build with Confidence",
-  "Build your dream property with flexible construction loans. LendSmart provides staged funding and expert support from start to finish.",
+  "Construction Loans in Adelaide | LendSmart Mortgages",
+  "Looking for construction loans in Adelaide? LendSmart offers tailored construction finance for home builds, renovations, extensions & knockdown rebuild projects.",
   "/construction-loans"
 );
 const constructionOptions = [
@@ -180,7 +180,7 @@ export default function ConstructionLoansPage() {
         ]}
       /> */}
 
-<Testimonials
+      <Testimonials
         title="Testimonials"
         description="Clients trust LendSmart Mortgages for reliable loan guidance and support."
         reviews={[
@@ -191,7 +191,7 @@ export default function ConstructionLoansPage() {
             name: "Michael Anderson",
             time: "3 Days ago",
             image: "/user.png",
-          }, 
+          },
           {
             heading: "",
             description:

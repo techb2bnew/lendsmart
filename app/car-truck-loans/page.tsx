@@ -10,8 +10,8 @@ import Testimonials from "../pages-component/Testimonials";
 import type { Metadata } from "next";
 import { pageMetadata } from "../lib/site";
 export const metadata: Metadata = pageMetadata(
-  "Car & Truck Loans Australia | Easy Vehicle Finance",
-  "Finance your car or truck with ease. LendSmart offers low-rate vehicle loans with quick approvals and flexible repayment options.",
+  "Car & Truck Loan Broker Adelaide | Vehicle Finance | LendSmart",
+  "Looking for a trusted car & truck loan broker in Adelaide? LendSmart helps you compare vehicle finance solutions for new  cars, trucks and commercial vehicles etc.",
   "/car-truck-loans"
 );
 const financeOptions = [
@@ -111,16 +111,16 @@ export default function CarTruckLoansPage() {
           ctaLink="/about-us"
         />
       </div>
- 
-        <LendingSolutions
-          title="Car /Truck Finance Options"
-          subtitle="There are so many Loan & financing options"
-          solutions={financeOptions}
-          chatButtonText="chat with us"
-          chatButtonLink="https://wa.me/61413206624"
-          rightImage="/service/finance.png"
-          rightImageClassName="object-contain object-center"
-        /> 
+
+      <LendingSolutions
+        title="Car /Truck Finance Options"
+        subtitle="There are so many Loan & financing options"
+        solutions={financeOptions}
+        chatButtonText="chat with us"
+        chatButtonLink="https://wa.me/61413206624"
+        rightImage="/service/finance.png"
+        rightImageClassName="object-contain object-center"
+      />
 
       <div className="pt-8 bg-[#eaf2df]  -mt-8 sm:-mt-10 lg:-mt-12">
         <LoanSupport
@@ -171,7 +171,7 @@ export default function CarTruckLoansPage() {
         ]}
       /> */}
 
-<Testimonials
+      <Testimonials
         title="Testimonials"
         description="Clients trust LendSmart Mortgages for reliable loan guidance and support."
         reviews={[
@@ -190,7 +190,7 @@ export default function CarTruckLoansPage() {
             name: "Jason K.",
             time: "3 Days ago",
             image: "/user-t.jpg",
-          }, 
+          },
         ]}
       />
     </>

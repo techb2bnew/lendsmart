@@ -3,8 +3,8 @@ import type { Metadata } from "next";
 import { pageMetadata } from "../lib/site";
 
 export const metadata: Metadata = pageMetadata(
-  "Terms & Conditions | LendSmart Mortgages Website Use",
-  "Read the terms and conditions governing the use of the LendSmart Mortgages website, services, loan enquiries, and electronic communications.",
+  "Terms & Conditions | LendSmart Mortgages Adelaide",
+  "Read the Terms and Conditions for using the LendSmart website, including your rights, responsibilities, website usage,  loan enquiries and legal information.",
   "/terms-conditions"
 );
 
@@ -31,7 +31,7 @@ export default function TermsConditions() {
         <div className="mb-8">
           <h2 className="text-xl font-semibold mb-2">9. Contact</h2>
           <p className="text-gray-600">LendSmart Mortgages </p>
-          
+
           <p className="text-gray-600">
             Phone:{" "}
             <a
@@ -46,15 +46,15 @@ export default function TermsConditions() {
             <span
               className="text-gray-500"
             >
-             4/628 Lower North East Road, Campbelltown SA 5074 
+              4/628 Lower North East Road, Campbelltown SA 5074
             </span>
-            </p>
-             <p className="text-gray-600">
-            Disclaimer: 
+          </p>
+          <p className="text-gray-600">
+            Disclaimer:
             <span
               className="text-gray-500"
             >
-             This document is a general template only and should be reviewed by an Australian solicitor or compliance adviser before publication. 
+              This document is a general template only and should be reviewed by an Australian solicitor or compliance adviser before publication.
             </span>
           </p>
         </div>
@@ -94,20 +94,20 @@ const terms = [
     content:
       "All website content, branding, graphics, and materials remain the intellectual property of LendSmart Mortgages  unless otherwise stated. ",
   },
-   {
+  {
     title: "7. Limitation of Liability",
     content:
       "To the maximum extent permitted by law, LendSmart Mortgages  is not liable for any direct or indirect loss arising from use of this website or reliance on website information.  ",
   },
-   {
+  {
     title: "7. Governing Law",
     content:
       "These Terms and Conditions are governed by the laws of South Australia, Australia.   ",
   },
-   {
+  {
     title: "7. Governing Law",
     content:
       "These Terms and Conditions are governed by the laws of South Australia, Australia.   ",
   },
- 
+
 ];

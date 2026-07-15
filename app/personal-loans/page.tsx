@@ -10,8 +10,8 @@ import PersonalLoanBenefits from "../service/PersonalLoanBenefits";
 import type { Metadata } from "next";
 import { pageMetadata } from "../lib/site";
 export const metadata: Metadata = pageMetadata(
-  "Personal Loans Australia | Fast & Flexible Finance",
-  "Get quick personal loans with flexible repayment options. LendSmart helps you fund your needs with fast approval and low interest rates.",
+  "Personal Loan Services Adelaide | Fast & Flexible Loans | LendSmart",
+  "Need personal loan services in Adelaide? LendSmart helps you compare personal loan options for debt consolidation, medical expenses, & more with expert  guidance.",
   "/personal-loans"
 );
 const personalUseItems = [
@@ -147,7 +147,7 @@ export default function PersonalLoansPage() {
         ]}
       /> */}
 
-<Testimonials
+      <Testimonials
         title="Testimonials"
         description="Clients trust LendSmart Mortgages for reliable loan guidance and support."
         reviews={[

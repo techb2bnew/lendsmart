@@ -11,8 +11,8 @@ import HowWeCanHelpYou from "../service/HowWeCanHelpYou";
 import type { Metadata } from "next";
 import { pageMetadata } from "../lib/site";
 export const metadata: Metadata = pageMetadata(
-  "Commercial Loans Australia | Business Finance",
-  "Grow your business with flexible commercial loans. LendSmart offers tailored financing solutions for expansion, cash flow & investments.",
+  "Commercial Finance Broker Adelaide | Business Loans | LendSmart",
+  "LendSmart is a leading commercial finance broker in Adelaide, helping businesses secure commercial loans, property finance, refinancing & flexible funding solutions.",
   "/commercial-loans"
 );
 const helpItems = [

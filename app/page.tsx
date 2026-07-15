@@ -10,8 +10,8 @@ import WhyChoose from "./pages-component/WhyChoose";
 import type { Metadata } from "next";
 import { pageMetadata } from "./lib/site";
 export const metadata: Metadata = pageMetadata(
-  "LendSmart Mortgages | Smart Loan Solutions in Australia",
-  "Get fast, reliable loan solutions with LendSmart. Home, personal, business & car loans tailored to your needs. Apply today for quick approvals.",
+  "Best Mortgage Broker in Adelaide | Lend Smart Home & Business Loans",
+  "Looking for the best mortgage broker in Adelaide? LendSmart offers home loans, commercial loans, personal loans, car & truck finance, construction loans and more.",
   "/"
 );
 export default function Home() {

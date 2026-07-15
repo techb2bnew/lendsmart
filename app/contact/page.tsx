@@ -6,8 +6,8 @@ import Testimonials from "../pages-component/Testimonials";
 import type { Metadata } from "next";
 import { pageMetadata } from "../lib/site";
 export const metadata: Metadata = pageMetadata(
-  "Contact LendSmart | Speak to Loan Experts",
-  "Need help with loans? Contact LendSmart today and speak with our experts for quick support, guidance, and personalized loan solutions.",
+  "Contact Us | LendSmart Mortgage Broker Adelaide",
+  "Contact LendSmart, your trusted mortgage broker in Adelaide. Speak with our finance experts about home loans, commercial finance more and ending solutions today.",
   "/contact"
 );
 export default function ContactPage() {

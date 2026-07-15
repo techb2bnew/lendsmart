@@ -10,8 +10,8 @@ import Testimonials from "../pages-component/Testimonials";
 import type { Metadata } from "next";
 import { pageMetadata } from "../lib/site";
 export const metadata: Metadata = pageMetadata(
-  "Asset Finance Australia | Equipment & Business Loans",
-  "Upgrade your business with asset finance solutions. Get funding for equipment, machinery & tools with LendSmart’s flexible plans.",
+  "Best Asset Finance Adelaide | Best Finance Broker | LendSmart",
+  "Choose LendSmart for best asset finance in Adelaide. We offer tailored funding solutions for vehicles, machinery, equipment & business assets with expert support.",
   "/asset-finance"
 );
 const assetFinanceOptions = [
@@ -179,7 +179,7 @@ export default function AssetFinancePage() {
         ]}
       /> */}
 
-<Testimonials
+      <Testimonials
         title="Testimonials"
         description="Clients trust LendSmart Mortgages for reliable loan guidance and support."
         reviews={[
